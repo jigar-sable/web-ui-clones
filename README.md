@@ -1,5 +1,7 @@
 # Web-UI-Clones
 Coming Soon ⚡⚡
-- WhatsApp
-- YouTube
-- Instagram
+- [ ] WhatsApp
+- [ ] YouTube
+- [ ] Instagram
+- [ ] Sololearn
+- [ ] Telegram
