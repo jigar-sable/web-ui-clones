@@ -45,7 +45,7 @@ body {
   <div class="flex flex-row h-screen">
 
     <!-- left section -->
-    <div class="sm:w-1/3 w-full flex flex-col relative border-r border-gray-hover">
+    <div class="lg:w-1/3 md:w-3/6 w-full flex flex-col relative border-r border-gray-hover">
       <!-- navbar -->
       <nav class="bg-gray-400 px-4 py-2.5">
         <!-- navbar container -->
@@ -63,7 +63,7 @@ body {
       </nav>
 
       <!-- input container -->
-      <div class="bg-gray-700 py-2 px-3 flex border-b border-gray-400">
+      <div class="bg-gray-700 py-2 px-3 flex flex-auto border-b border-gray-400">
         <!-- input box -->
         <div class="flex flex-auto items-center bg-inputBoxBg p-1.5 rounded-full">
           <svg class="h-6 w-6 text-gray-300 p-1 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,7 +77,7 @@ body {
       <!-- contacts chats list -->
       <div class="flex flex-col bg-gray-700 overflow-y-auto overflow-x-hidden" id="contact-list">
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
           <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
 
@@ -314,7 +314,7 @@ body {
     </div>
 
     <!-- right section -->
-    <div class="relative hidden sm:flex bg-gray-900 flex-auto flex-col">
+    <div class="relative hidden md:flex bg-gray-900 flex-auto flex-col">
       <!-- top navbar -->
       <nav class="bg-gray-400 px-4 py-2">
         <!-- navbar container -->
@@ -340,7 +340,7 @@ body {
       <!-- chat section -->
       <div class="flex overflow-y-auto h-5/6 bg-gray-900 mb-1" id="chats-container">
         <!-- messages container -->
-        <div class="mx-auto w-4/5 p-2 relative" id="msgContainer">
+        <div class="mx-auto w-4/5 p-0 lg:p-2 relative" id="msgContainer">
           <!-- day conatiner sticky -->
           <span class="absolute top-1 -ml-56 z-10 py-1.5 px-3 sticky bg-gray-400 text-sm text-gray-100 rounded-md shadow-md">TODAY</span>
           <!-- messages -->
