@@ -1,0 +1,15 @@
+{
+  "name": "instagran-web-ui",
+  "version": "1.0.0",
+  "description": "Clone of Instagram Web UI",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:css": "tailwind build -i src/style.css -o public/style.css"
+  },
+  "author": "Jigar Sable",
+  "license": "ISC"
+}
