@@ -18,7 +18,7 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
-      gray: colors.coolGray,
+      // gray: colors.coolGray,
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
@@ -26,6 +26,19 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+
+      gray: {
+        100 : '#e7e7e8',
+        300 : '#f1f1f2a1',
+        400: '#2a2f32',
+        hover: '#323739',
+        msgInputbg : '#1e2428',
+        700: '#131c21',
+        900 : '#111827',
+      },
+      inputBoxBg : '#33383b',
+      rightMsgBg : '#056162',
+      leftMsgBg : '#262d31',
     },
     spacing: {
       px: '1px',
@@ -265,6 +278,10 @@ module.exports = {
         '"Liberation Mono"',
         '"Courier New"',
         'monospace',
+      ],
+      poppins: [
+        '"Poppins"',
+        'sans-serif',
       ],
     },
     fontSize: {
