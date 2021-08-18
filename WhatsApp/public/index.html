@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<style>
+#contact-list::-webkit-scrollbar{
+  width: .3rem;
+}
+#contact-list::-webkit-scrollbar-track{
+  background: transparent;
+}
+#contact-list::-webkit-scrollbar-thumb{
+  background: rgb(100, 100, 100);
+}  
+
+#chats-container::-webkit-scrollbar{
+  width: .4rem;
+}
+#chats-container::-webkit-scrollbar-track{
+  background: transparent;
+}
+#chats-container::-webkit-scrollbar-thumb{
+  background: rgb(100, 100, 100);
+} 
+</style>
+    
+  <!-- whole container -->
+  <div class="flex flex-row h-screen">
+
+    <!-- left section -->
+    <div class="sm:w-1/3 w-full bg-green-00 flex flex-col border-r border-gray-700">
+      <!-- navbar -->
+      <nav class="bg-gray-600 px-2 py-3">
+        <!-- navbar container -->
+        <div class="flex flex-row items-center justify-between">
+          <!-- left logo -->
+          <div class="logo rounded-full w-9 h-9 bg-green-700">
+
+          </div>
+          <!-- right icons -->
+          <div class="flex space-x-4">
+            <svg class="h-10 w-8 text-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+
+            <svg class="h-10 w-8 text-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd" />
+            </svg>
+
+            <svg class="h-10 w-8 text-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      <!-- input container -->
+      <div class="bg-gray-800 py-2 px-3 flex border-b border-gray-700">
+        <!-- input box -->
+        <div class="flex flex-auto items-center bg-gray-600 p-1 rounded-full">
+          <svg class="h-6 w-6 text-gray-200 p-1 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        <input class="bg-transparent ml-4 border-none outline-none" type="text" placeholder="Search or start new chat">
+        </div>
+      </div>
+
+
+      <!-- contacts chats list -->
+      <div class="flex flex-col bg-gray-800 overflow-y-auto overflow-x-hidden" id="contact-list">
+        <!-- chat list item -->
+        <div class="flex flex-auto p-3 hover:bg-gray-700 space-x-1">
+          <img class="w-14 h-14 rounded-full object-cover" src="/public/hero.png" alt="">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 px-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center mr-2">
+              <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
+              <span class="text-gray-400 text-sm">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="truncate text-overflow:ellipsis w-5/6 text-gray-300 text-sm">Sppu onsdfghdfghjline exam april wal</h3>
+              <!-- <span class="text-gray-300 text-sm">yesterday</span> -->
+              <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-5/6 ml-16 border-b border-gray-700"></div>    
+
+           <!-- chat list item -->
+           <div class="flex flex-auto p-3 hover:bg-gray-700 space-x-1">
+            <img class="w-14 h-14 rounded-full object-cover" src="/public/hero.png" alt="">
+  
+            <!-- chat desc container -->
+            <div class="flex flex-col flex-auto justify-between py-1 px-2">
+              <!-- name & time container -->
+              <div class="flex justify-between items-center mr-2">
+                <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
+                <span class="text-gray-400 text-sm">yesterday</span>
+              </div>
+  
+              <!-- msg container -->
+              <div class="flex items-center justify-between">
+                <h3 class="truncate text-overflow:ellipsis w-5/6 text-gray-300 text-sm">Sppu onsdfghdfghjline exam april wal</h3>
+                <!-- <span class="text-gray-300 text-sm">yesterday</span> -->
+                <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="w-5/6 ml-16 border-b border-gray-700"></div>    
+
+          
+             <!-- chat list item -->
+        <div class="flex flex-auto p-3 hover:bg-gray-700 space-x-1">
+          <img class="w-14 h-14 rounded-full object-cover" src="/public/hero.png" alt="">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 px-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center mr-2">
+              <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
+              <span class="text-gray-400 text-sm">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="truncate text-overflow:ellipsis w-5/6 text-gray-300 text-sm">Sppu onsdfghdfghjline exam april wal</h3>
+              <!-- <span class="text-gray-300 text-sm">yesterday</span> -->
+              <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-5/6 ml-16 border-b border-gray-700"></div>    
+
+
+        <!-- chat list item -->
+        <div class="flex flex-auto p-3 hover:bg-gray-700 space-x-1">
+          <img class="w-14 h-14 rounded-full object-cover" src="/public/hero.png" alt="">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 px-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center mr-2">
+              <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
+              <span class="text-gray-400 text-sm">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="truncate text-overflow:ellipsis w-5/6 text-gray-300 text-sm">Sppu onsdfghdfghjline exam april wal</h3>
+              <!-- <span class="text-gray-300 text-sm">yesterday</span> -->
+              <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-5/6 ml-16 border-b border-gray-700"></div>    
+
+        <!-- chat list item -->
+        <div class="flex flex-auto p-3 hover:bg-gray-700 space-x-1">
+          <img class="w-14 h-14 rounded-full object-cover" src="/public/hero.png" alt="">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 px-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center mr-2">
+              <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
+              <span class="text-gray-400 text-sm">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="truncate text-overflow:ellipsis w-5/6 text-gray-300 text-sm">Sppu onsdfghdfghjline exam april wal</h3>
+              <!-- <span class="text-gray-300 text-sm">yesterday</span> -->
+              <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-5/6 ml-16 border-b border-gray-700"></div>    
+
+        <!-- chat list item -->
+        <div class="flex flex-auto p-3 hover:bg-gray-700 space-x-1">
+          <img class="w-14 h-14 rounded-full object-cover" src="/public/hero.png" alt="">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 px-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center mr-2">
+              <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
+              <span class="text-gray-400 text-sm">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="truncate text-overflow:ellipsis w-5/6 text-gray-300 text-sm">Sppu onsdfghdfghjline exam april wal</h3>
+              <!-- <span class="text-gray-300 text-sm">yesterday</span> -->
+              <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-5/6 ml-16 border-b border-gray-700"></div>    
+
+        <!-- chat list item -->
+        <div class="flex flex-auto p-3 hover:bg-gray-700 space-x-1">
+          <img class="w-14 h-14 rounded-full object-cover" src="/public/hero.png" alt="">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 px-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center mr-2">
+              <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
+              <span class="text-gray-400 text-sm">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="truncate text-overflow:ellipsis w-5/6 text-gray-300 text-sm">Sppu onsdfghdfghjline exam april wal</h3>
+              <!-- <span class="text-gray-300 text-sm">yesterday</span> -->
+              <svg class="h-5 w-5 text-gray-400 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-5/6 ml-16 border-b border-gray-700"></div>    
+        
+        
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- right section -->
+    <div class="hidden sm:flex bg-yellow-500 flex-auto flex-col">
+      <!-- top navbar -->
+      <nav class="bg-gray-600 px-3 py-2.5">
+        <!-- navbar container -->
+        <div class="flex flex-auto items-center">
+          <img class="w-11 h-11 rounded-full object-cover" src="/public/hero.png" alt="">
+
+          <!-- middle nav -->
+          <div class="flex flex-col ml-4 flex-auto">
+            <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
+            <span class="text-gray-300 text-sm">Last Seen at 08:30pm</span>
+          </div>
+
+          <!-- right nav icons -->
+          <div class="flex space-x-3">
+
+            <svg class="h-9 w-8 text-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+
+            <svg class="h-9 w-8 text-gray-300 p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+            </svg>
+
+          </div>
+
+        </div>
+      </nav>
+
+    
+      <!-- chat section -->
+      <div class="flex overflow-y-scroll h-4/5 bg-gray-900" id="chats-container">
+        <!-- messages container -->
+        <div class="mx-auto w-4/5 p-2 mb-2 pb-2">
+          <!-- messages -->
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 max-w-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae aperiam adipisci vitae tempore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, explicabo at. Dicta?</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+           <!-- left message -->
+           <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+           <!-- left message -->
+           <div class="relative clear-both px-3 mt-0.5 float-left bg-gray-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-12 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23pm</span>
+          </div>
+          
+          <!-- right message -->
+          <div class="relative clear-both px-3 mt-0.5 float-right bg-green-600 p-1 rounded-md text-gray-200 shadow">
+            <p class="mr-16 truncate text-overflow:ellipsis">Lorem ipsum dolor, sit amet.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg class="absolute bottom-0 right-0 text-xs h-5 w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#0044b6"><path d="M126.02136,45.81068c-1.48951,0.04438 -2.90324,0.6669 -3.94167,1.73568l-53.27969,53.27969l-18.8237,-18.8237c-0.01853,-0.01879 -0.0372,-0.03745 -0.05599,-0.05599c-1.07503,-1.07526 -2.53316,-1.67946 -4.05365,-1.67969c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0.00023,1.52049 0.60443,2.97861 1.67969,4.05364l18.87969,18.87969l-9.09271,9.09271l-36.07969,-36.07969c-1.43802,-1.49776 -3.57339,-2.1011 -5.58258,-1.57732c-2.00919,0.52378 -3.57824,2.09283 -4.10202,4.10202c-0.52378,2.00919 0.07955,4.14456 1.57731,5.58258l40.13333,40.13333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.53333,-74.53333c1.69569,-1.64828 2.20555,-4.16851 1.28389,-6.3463c-0.92166,-2.17779 -3.08576,-3.56638 -5.44951,-3.49667zM160.53333,45.86667c-1.52049,0.00023 -2.97861,0.60443 -4.05364,1.67969l-70.47969,70.47969l-1.67969,-1.67969l-8.10729,8.10729l5.73333,5.73333c2.23904,2.23811 5.86825,2.23811 8.10729,0l74.47735,-74.47734c1.10964,-1.07938 1.73565,-2.56161 1.73567,-4.10964c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+          </div>
+
+          
+        
+        </div>
+      </div>
+
+
+
+      <!-- msg input container -->
+      <div class="bg-gray-600 flex flex-auto items-center px-4 space-x-3">
+        
+        <!-- wrapper -->
+        <div class="flex space-x-2">
+        <svg class="w-10 h-10 text-gray-300 px-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+
+        <svg class="w-10 h-10 text-gray-300 px-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+        </svg>
+        </div>
+
+        <!-- input box -->
+        <input class="flex flex-auto bg-gray-800 px-4 py-2.5 border-none outline-none rounded-full" type="text" placeholder="hello type here">
+
+        <svg class="w-10 h-10 text-gray-300 p-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
+        </svg>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

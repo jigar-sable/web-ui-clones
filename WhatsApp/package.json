@@ -1,0 +1,17 @@
+{
+  "name": "whatsapp-web-ui",
+  "version": "1.0.0",
+  "description": "UI Clone of WhatsApp Web",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build -i src/style.css -o public/style.css"
+  },
+  "author": "Jigar",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "tailwindcss-pseudo-elements": "^2.0.0"
+  }
+}
