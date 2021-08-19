@@ -243,6 +243,10 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      roboto: [
+        'Roboto',
+        'sans-serif',
+      ],
       sans: [
         'ui-sans-serif',
         'system-ui',
