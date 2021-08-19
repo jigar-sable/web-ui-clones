@@ -153,7 +153,7 @@ module.exports = {
       DEFAULT: '1px',
       0: '0px',
       2: '2px',
-      4: '4px',
+      4: '3px',
       8: '8px',
     },
     boxShadow: {
@@ -239,6 +239,10 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      firasans: [
+        'Fira Sans', 
+        'sans-serif',
+      ],
       sans: [
         'ui-sans-serif',
         'system-ui',

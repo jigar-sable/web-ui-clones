@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/WhatsApp/public/favicon.ico" type="image/x-icon">
-    <title>WhatsApp Web UI Clone</title>
+    <link rel="shortcut icon" href="/Sololearn/public/images/favicon.svg" type="image/x-icon">
+    <title>Sololearn: Learn to Code</title>
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 font-firasans">
 
   <!-- navbar -->
-  <nav class="bg-white p-2 w-full">
+  <nav class="bg-white p-2 w-full shadow">
     <!-- navbar container -->
     <div class="flex flex-auto flex-grow-0 justify-between items-center p-4 md:p-6 mx-auto">
 
@@ -23,11 +23,11 @@
     
     <!-- mid navbar -->
     <div class="hidden lg:flex items-center space-x-6">
-      <a class="text-xl text-gray-600 font-semibold" href="">Courses</a>
-      <a class="text-xl text-gray-600 font-semibold" href="">Code Playground</a>
-      <a class="text-xl text-gray-600 font-semibold" href="">Discuss</a>
-      <a class="text-xl text-gray-600 font-semibold" href="">Blog</a>
-      <button class="flex items-center px-8 py-2.5 hover:bg-yellow-300 bg-yellow-400 text-yellow-800 rounded-md text-lg font-bold">
+      <a class="text-xl text-gray-700" href="">Courses</a>
+      <a class="text-xl text-gray-700" href="">Code Playground</a>
+      <a class="text-xl text-gray-700" href="">Discuss</a>
+      <a class="text-xl text-gray-700" href="">Blog</a>
+      <button class="flex items-center px-8 py-2.5 hover:bg-yellow-300 bg-yellow-400 text-yellow-800 rounded-md font-semibold">
         <svg class="w-5 h-5" id="simpleStar" viewBox="0 0 12 12" style="fill: currentColor"><path d="M11.612 4.226l-3.597-.548L6.407.264a.446.446 0 0 0-.813 0L3.984 3.678l-3.597.548a.446.446 0 0 0-.26.138a.488.488 0 0 0 .01.672L2.74 7.693l-.615 3.752a.495.495 0 0 0 .027.26a.47.47 0 0 0 .153.204a.44.44 0 0 0 .477.036L6 10.174l3.218 1.771c.088.05.19.065.287.048a.472.472 0 0 0 .37-.548L9.26 7.693l2.603-2.657a.482.482 0 0 0 .132-.272a.47.47 0 0 0-.383-.538z"></path></svg> 
         &nbsp;Go PRO</button>
     </div>
@@ -52,7 +52,7 @@
   </nav>
 
   <!-- mobile menu items -->
-  <div class="relative w-full sm:absolute sm:w-2/5 sm:right-0 sm:z-10 lg:hidden flex flex-col bg-white border shadow-md" id="mobMenu">
+  <div class="relative w-full sm:absolute sm:w-2/5 sm:right-0 sm:z-10 lg:hidden hidden flex flex-col bg-white border shadow-md" id="mobMenu">
   
     <!-- top navbar -->
     <div class="flex flex-col justify-items-start space-y-3 px-6 py-3 border">
@@ -95,16 +95,16 @@
 
 
   <!-- main section -->
-  <div class="flex flex-col mt-8 sm:w-full md:w-4/5 lg:w-2/3 h-screen mx-auto bg-red-300">
+  <div class="flex flex-col mt-8 sm:w-full md:w-4/5 lg:w-2/3 h-screen mx-auto">
     <!-- <div class="flex flex-auto items-center justify-center"> -->
-    <h2 class="text-2xl font-bold text-center">What would you like to learn?</h2>
+    <h2 class="text-2xl font-bold text-center text-gray-700">What would you like to learn?</h2>
     <!-- </div> -->
 
     <!-- courses container -->
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4 mt-6 px-8 py-4">
       
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
+      <!-- one course card -->
+      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-75">
         <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
         <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
         </div>
@@ -112,122 +112,6 @@
         <span class="text-sm text-gray-400">7.3M Learners</span>
       </div>
 
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
-
-      <!-- one skill card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-100 ease-linear">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
-        <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
-        </div>
-        <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
-        <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
 
     </div>
   </div>
