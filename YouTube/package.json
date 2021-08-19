@@ -1,0 +1,14 @@
+{
+  "name": "youtube-ui-clone",
+  "version": "1.0.0",
+  "description": "YouTube Web UI Clone",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build -i src/style.css -o public/style.css"
+  },
+  "author": "Jigar Sable",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  }
+}
