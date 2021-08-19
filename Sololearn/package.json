@@ -1,0 +1,15 @@
+{
+  "name": "sololearn-ui-clone",
+  "version": "1.0.0",
+  "description": "Sololearn UI Clone",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:tailwind": "tailwind build -i src/style.css -o public/style.css"
+  },
+  "author": "Jigar Sable",
+  "license": "ISC"
+}
