@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
+<style>
+#stories-container::-webkit-scrollbar {
+  display: none;
+}
+</style>
+
+
 
   <!-- sticky navbar -->
   <nav class="fixed top-0 bg-white w-full border-b z-10">
@@ -47,16 +54,16 @@
   </nav>
 
   <!-- whole container -->
-  <div class="flex h-full w-3/4 mt-16 mx-auto">
-    <div class="flex flex-col w-2/3 mt-6 px-8 mb-8">
+  <div class="flex h-full md:w-4/5 lg:w-3/4 mt-14 mx-auto">
+    <div class="flex flex-col w-full lg:w-2/3 sm:mt-6 sm:px-8 mb-8">
     
       <!-- stories container -->
-      <div class="w-full bg-white py-4 flex flex-auto overflow-x-auto border rounded">
+      <div class="w-full bg-white py-4 flex flex-auto overflow-x-auto border rounded" id="stories-container">
 
         <!-- one story -->
         <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
           </div>
           <span class="text-xs">devuinux</span>
         </div>
@@ -64,7 +71,7 @@
         <!-- one story -->
         <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
           </div>
           <span class="text-xs">devuinux</span>
         </div>
@@ -72,7 +79,7 @@
         <!-- one story -->
         <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
           </div>
           <span class="text-xs">devuinux</span>
         </div>
@@ -80,7 +87,55 @@
         <!-- one story -->
         <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">devuinux</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">devuinux</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">devuinux</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">devuinux</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">devuinux</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">devuinux</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
           </div>
           <span class="text-xs">devuinux</span>
         </div>
@@ -88,7 +143,7 @@
       </div>
 
       <!-- posts container -->
-      <div class="w-full h-full mt-6 flex flex-col space-y-4">
+      <div class="w-full h-full mt-1 sm:mt-6 flex flex-col space-y-4">
 
         <!-- one post card -->
         <div class="flex flex-col flex-auto border w-full rounded bg-white">
@@ -406,7 +461,7 @@
     </div>
 
     <!-- right sidebar fixed -->
-    <div class="fixed right-40 w-3/12 h-full flex flex-col flex-auto m-8">
+    <div class="fixed lg:right-32 xl:right-40 w-3/12 h-full hidden lg:flex flex-col flex-auto m-8">
 
         <!-- container aligned -->
         <div class="ml-6 flex flex-col p-2">
