@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
 /*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -22344,6 +22346,10 @@ video {
 
 .align-text-bottom{
   vertical-align: text-bottom;
+}
+
+.font-roboto{
+  font-family: "Roboto", sans-serif;
 }
 
 .font-sans{
@@ -53904,6 +53910,10 @@ video {
     vertical-align: text-bottom;
   }
 
+  .sm\:font-roboto{
+    font-family: "Roboto", sans-serif;
+  }
+
   .sm\:font-sans{
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -85108,6 +85118,10 @@ video {
 
   .md\:align-text-bottom{
     vertical-align: text-bottom;
+  }
+
+  .md\:font-roboto{
+    font-family: "Roboto", sans-serif;
   }
 
   .md\:font-sans{
@@ -116316,6 +116330,10 @@ video {
     vertical-align: text-bottom;
   }
 
+  .lg\:font-roboto{
+    font-family: "Roboto", sans-serif;
+  }
+
   .lg\:font-sans{
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -147522,6 +147540,10 @@ video {
     vertical-align: text-bottom;
   }
 
+  .xl\:font-roboto{
+    font-family: "Roboto", sans-serif;
+  }
+
   .xl\:font-sans{
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -178726,6 +178748,10 @@ video {
 
   .\32xl\:align-text-bottom{
     vertical-align: text-bottom;
+  }
+
+  .\32xl\:font-roboto{
+    font-family: "Roboto", sans-serif;
   }
 
   .\32xl\:font-sans{

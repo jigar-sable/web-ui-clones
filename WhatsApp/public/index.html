@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/WhatsApp/public/favicon.ico" type="image/x-icon">
-    <title>WhatsApp Web UI Clone</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>WhatsApp</title>
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="font-roboto">
 
 <!-- custom css -->
 <style>
-body {
-  font-family: 'Poppins', sans-serif;
-}
 #contact-list::-webkit-scrollbar{
   width: .3rem;
 }
@@ -51,7 +48,7 @@ body {
         <!-- navbar container -->
         <div class="flex flex-row items-center justify-between">
           <!-- left logo -->
-          <img class="w-10 h-10 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-10 h-10 rounded-full object-cover cursor-pointer" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- right icons -->
           <div class="flex items-center space-x-4">
@@ -77,9 +74,9 @@ body {
       <!-- contacts chats list -->
       <div class="flex flex-col bg-gray-700 overflow-y-auto overflow-x-hidden" id="contact-list">
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 bg-gray-hover hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -91,17 +88,39 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
         <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>  
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
         
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -113,17 +132,17 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
 
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -135,17 +154,17 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
 
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -157,17 +176,17 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
 
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -179,17 +198,17 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
 
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -201,17 +220,17 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
 
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -223,17 +242,17 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
 
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -245,17 +264,17 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
 
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -267,17 +286,17 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
 
         <!-- chat list item -->
-        <div class="flex flex-auto items-center space-x-1 cursor-pointer p-3 px-4 hover:bg-gray-hover" id="contact-list-item">
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
           
-          <img class="w-12 h-12 rounded-full object-cover" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- chat desc container -->
           <div class="flex flex-col flex-auto justify-between py-1 pl-2">
@@ -289,17 +308,238 @@ body {
 
             <!-- msg container -->
             <div class="flex items-center justify-between">
-              <h3 class="truncate text-overflow:ellipsis w-11/12 text-gray-300 text-sm font-light">Sppu onsdfghdfghjline exam april waldfghj</h3>
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
               <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
             </div>
           </div>
         </div>
-        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div> 
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+
+        <!-- chat list item -->
+        <div class="flex flex-auto items-center space-x-1 cursor-pointer px-4 p-3 hover:bg-gray-hover" id="contact-list-item">
+          
+          <img class="w-12 h-12 rounded-full object-cover" src="./assests/images/profile.jpg" alt="" draggable="false">
+
+          <!-- chat desc container -->
+          <div class="flex flex-col flex-auto justify-between py-1 pl-2">
+            <!-- name & time container -->
+            <div class="flex justify-between items-center">
+              <h3 class="text-gray-100 truncate">Jhon Doe</h3>
+              <span class="text-gray-300 text-xs font-light">yesterday</span>
+            </div>
+
+            <!-- msg container -->
+            <div class="flex items-center justify-between">
+              <h3 class="w-11/12 text-gray-300 text-sm font-light">Lorem, ipsum dolor sit amet consectetur</h3>
+              <svg class="arrow text-gray-300 hidden transition duration-500 ease-out" viewBox="0 0 19 20" width="19" height="20"><path fill="currentColor" d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z"></path></svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-auto ml-16 border-b border-gray-hover"></div>
+        
 
       </div>
 
       <!-- menu bar toggle buttons -->
-      <div class="absolute hidden right-6 top-12 rounded flex flex col bg-gray-400 shadow-2xl border transition duration-700 ease-out" id="menuItems">
+      <div class="absolute hidden right-6 top-12 rounded flex flex col bg-gray-400 shadow-2xl transition duration-1000 ease-out" id="menuItems">
         <div class="relative flex flex-col flex-auto justify-start w-44 pt-2 pb-2">
           <a class="hover:bg-gray-700 text-sm text-gray-100 font-light px-7 py-2.5" href="">New group</a>
           <a class="hover:bg-gray-700 text-sm text-gray-100 font-light px-7 py-2.5" href="">Create a room</a>
@@ -319,12 +559,12 @@ body {
       <nav class="bg-gray-400 px-4 py-2">
         <!-- navbar container -->
         <div class="flex flex-auto items-center">
-          <img class="w-11 h-11 rounded-full object-cover cursor-pointer" src="/WhatsApp/public/hero.png" alt="">
+          <img class="w-11 h-11 rounded-full object-cover cursor-pointer" src="./assests/images/profile.jpg" alt="" draggable="false">
 
           <!-- middle nav -->
           <div class="flex flex-col ml-4 flex-auto cursor-pointer">
             <h3 class="text-gray-100 font-bold">Jhon Doe</h3>
-            <span class="text-gray-300 text-xs font-light">Last Seen at 08:30pm</span>
+            <span class="text-gray-300 text-xs font-light">online</span>
           </div>
 
           <!-- right nav icons -->
@@ -347,25 +587,39 @@ body {
 
           <!-- left message -->
           <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
-            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsdfghdfghjdfghjfghfd ghfdghjd ghfdghjadfg sdfghfd ghs fdgfdg dfgsum dolor, sit amet. lorem15</p>
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, saepe.</p>
             <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
           </div>
 
           <!-- left message -->
           <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
-            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor, sit amet. lorem15</p>
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur.</p>
             <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
           </div>
 
           <!-- left message -->
           <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
-            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor, sit amet. lorem15</p>
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quaerat voluptatem veritatis sit. Animi soluta reiciendis obcaecati id natus inventore!</p>
             <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
           </div>
 
            <!-- right message -->
           <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
-            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
+            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
+          </div>
+
+          <!-- right message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
+            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet.</p>
             <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
             <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
@@ -379,9 +633,55 @@ body {
              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
           </div>
 
+          <!-- left message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, repellendus perferendis. Qui?</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
+          </div>
+
           <!-- right message -->
           <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
             <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
+          </div>
+
+           <!-- left message -->
+           <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, saepe.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quaerat voluptatem veritatis sit. Animi soluta reiciendis obcaecati id natus inventore!</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
+          </div>
+
+           <!-- right message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
+            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
+            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
+             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
+          </div>
+
+          <!-- left message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur.</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
+          </div>
+
+          <!-- right message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
+            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet.</p>
             <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
             <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
@@ -395,12 +695,10 @@ body {
              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
           </div>
 
-          <!-- right message -->
-          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
-            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
-            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
-            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
-             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
+          <!-- left message -->
+          <div class="relative clear-both p-2 px-3 mt-0.5 float-left bg-leftMsgBg rounded-lg text-gray-200 shadow">
+            <p class="mr-14 max-w-md text-gray-100 text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, repellendus perferendis. Qui?</p>
+            <span class="absolute bottom-0 right-1 text-xs p-0.5 text-gray-300">10:23 pm</span>
           </div>
 
           <!-- right message -->
@@ -410,55 +708,7 @@ body {
             <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
           </div>
-
-          <!-- right message -->
-          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
-            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
-            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
-            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
-             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
-          </div>
-
-          <!-- right message -->
-          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
-            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
-            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
-            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
-             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
-          </div>
-
-          <!-- right message -->
-          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
-            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
-            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
-            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
-             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
-          </div>
-
-          <!-- right message -->
-          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
-            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
-            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
-            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
-             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
-          </div>
-
-          <!-- right message -->
-          <div class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
-            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
-            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
-            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
-             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
-          </div>
-
-          <!-- right message -->
-          <div id="newMsg" class="relative clear-both p-2 px-3 mt-0.5 float-right bg-rightMsgBg p-1 rounded-lg shadow">
-            <p class="mr-16 max-w-md text-gray-100 text-sm font-light">Lorem, ipsum dolor sit amet consecing elit. Molestiae, explicabo at. Dicta?</p>
-            <span class="absolute bottom-0 right-5 text-xs p-0.5 text-gray-300 mr-0.5">10:23pm</span>
-            <svg  class="absolute bottom-0 right-0 text-xs h-4 w-4 mr-1 mb-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172"
-             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#20a0ff"><path d="M44.72,144.48c-1.81406,0 -3.57437,-0.72562 -4.86437,-2.01562l-37.84,-37.84c-2.6875,-2.6875 -2.6875,-7.04125 0,-9.72875c2.6875,-2.6875 7.04125,-2.6875 9.72875,0l32.49187,32.49187l77.74938,-93.92812c2.41875,-2.94281 6.75906,-3.34594 9.675,-0.91375c2.92937,2.41875 3.34594,6.75906 0.91375,9.675l-82.56,99.76c-1.22281,1.505 -3.03688,2.40531 -4.97188,2.48594c-0.1075,0.01344 -0.215,0.01344 -0.3225,0.01344zM82.8825,144.46656c1.935,-0.08063 3.73563,-0.98094 4.97188,-2.48594l82.56,-99.76c2.43219,-2.91594 2.01562,-7.25625 -0.91375,-9.675c-2.91594,-2.43219 -7.25625,-2.01563 -9.675,0.91375l-77.74938,93.92812l-1.53187,-1.53187c-2.6875,-2.6875 -7.04125,-2.6875 -9.72875,0c-2.6875,2.6875 -2.6875,7.04125 0,9.72875l6.88,6.88c1.29,1.29 3.05031,2.01562 4.86437,2.01562c0.1075,0 0.215,0 0.3225,-0.01344z"></path></g></g></svg>
-          </div>
-        
+      
           
         
         </div>
@@ -482,7 +732,7 @@ body {
     </div>
 
     <!-- menu bar toggle buttons -->
-    <div class="absolute hidden right-6 top-12 rounded flex flex col bg-gray-400 shadow-2xl border transition duration-700 ease-out" id="menuItems2">
+    <div class="absolute hidden right-6 top-12 rounded flex flex col bg-gray-400 shadow-2xl transition duration-1000 ease-out" id="menuItems2">
       <div class="relative flex flex-col flex-auto justify-start w-48 pt-2 pb-2">
         <a class="hover:bg-gray-700 text-sm text-gray-100 font-light px-6 py-3" href="">Contact info</a>
         <a class="hover:bg-gray-700 text-sm text-gray-100 font-light px-6 py-3" href="">Select messages</a>
