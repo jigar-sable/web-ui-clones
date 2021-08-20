@@ -1,26 +1,301 @@
 [
     {
-        "thumbnail": "dfg",
-        "videoURL": "dfg",
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
         "desc": {
-            "channelLogo": "df",
-            "channelName": "df",
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
             "channelURL": "dfg",
-            "title": "dfg",
-            "views": "dfg",
-            "published": "fg"
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
         }
     },
     {
-        "thumbnail": "",
+        "thumbnail": "images/ganesh.jpg",
         "videoURL": "",
+        "duration": "16:25",
         "desc": {
-            "channelLogo": "",
-            "channelName": "",
-            "channelURL": "",
-            "title": "",
-            "views": "",
-            "published": ""
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
+        }
+    },
+    {
+        "thumbnail": "images/ganesh.jpg",
+        "videoURL": "",
+        "duration": "16:25",
+        "desc": {
+            "channelLogo": "images/hero.png",
+            "channelName": "Jhon Doe",
+            "channelURL": "dfg",
+            "title": "This is YouTube UI Clone using TailwindCSS",
+            "views": "51k",
+            "published": "1 day"
         }
     }
 ]
