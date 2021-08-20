@@ -12,15 +12,6 @@
 </head>
 <body class="font-roboto scrollbar-thin scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500 scrollbar-thumb-rounded-full scrollbar-track-mainBg bg-topNavBg">
 
-<!-- custom css -->
-<style>
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-21 { font-size: 21px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-</style>
-
     <!-- top fixed navbar -->
     <nav class="bg-topNavBg w-full p-1 sticky top-0 z-20">
         <!-- navbar container -->
@@ -52,7 +43,7 @@
                 <i class="material-icons text-white cursor-pointer">apps</i>
                 <i class="material-icons text-white cursor-pointer">notifications</i>
 
-                <img class="w-9 h-9 rounded-full object-cover cursor-pointer" src="/Instagram/public/images/hero.png" alt="" draggable="false">
+                <img class="w-9 h-9 rounded-full object-cover cursor-pointer" src="./images/hero.png" alt="" draggable="false">
             </div>
 
         </div>
@@ -62,7 +53,7 @@
     <!-- main container -->
     <div class="flex flex-row">
         <!-- left sidebar fixed -->
-        <div class="pb-16 hidden fixed w-60 bg-sideBarBg h-full lg:flex flex-col overflow-y-auto pr-4 pt-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scrollbar-track-sideBarBg ">
+        <div class="pb-16 hidden fixed w-60 bg-sideBarBg h-full lg:flex flex-col pr-4 pt-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scrollbar-track-sideBarBg" id="sidebar" >
             <!-- main home explore btns -->
             <div class="flex flex-col w-full mb-2">
                 <div class="flex items-center space-x-5 bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
@@ -301,25 +292,25 @@
 
             <!-- one pill -->
             <a href="#" class="text-sm bg-white py-1.5 px-3 rounded-full text-black">All</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">Tailwind</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">HTML</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">Programs</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">Design</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">Website</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">ReactJS</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">UI</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">Android</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">Jetpack</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">Bootstrap</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">JavaScript</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">PHP</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">Git</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">SQL</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">React</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Flutter</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Tech</a>
-            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Java</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">CSS</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">Tailwind</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">HTML</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">Programs</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">Design</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">Website</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">ReactJS</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">UI</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">Android</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">Jetpack</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">Bootstrap</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">JavaScript</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">PHP</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700 transition duration-150">Git</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700 transition duration-150">SQL</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700 transition duration-150">React</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700 transition duration-150">Flutter</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700 transition duration-150">Tech</a>
+            <a href="#" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700 transition duration-150">Java</a>
          </div>
 
         <!-- videos container grid layout -->
