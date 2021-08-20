@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-roboto scrollbar-thin scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500 scrollbar-thumb-rounded-full scrollbar-track-mainBg bg-topNavBg">
+<body class="body">
 
     <!-- top fixed navbar -->
     <nav class="bg-topNavBg w-full p-1 sticky top-0 z-20">
@@ -53,7 +53,7 @@
     <!-- main container -->
     <div class="flex flex-row">
         <!-- left sidebar fixed -->
-        <div class="pb-16 hidden fixed w-60 bg-sideBarBg h-full lg:flex flex-col pr-4 pt-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scrollbar-track-sideBarBg" id="sidebar" >
+        <div class="sidebar" id="sideBar" >
             <!-- main home explore btns -->
             <div class="flex flex-col w-full mb-2">
                 <div class="flex items-center space-x-5 bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
@@ -288,7 +288,7 @@
         <div class="flex flex-col lg:ml-60 w-full lg:w-4/5 xl:w-5/6">
 
         <!-- tags pills fixed navbar -->
-        <div class="relative sticky top-14 flex flex-auto items-center space-x-3 px-5 py-2.5 border-t border-b border-sideBarHoverBg bg-topNavBg bg-opacity-95 z-20 overflow-x-scroll overflow-y-hidden scrollbar-none">
+        <div class="tags-container">
 
             <!-- one pill -->
             <a href="#" class="text-sm bg-white py-1.5 px-3 rounded-full text-black">All</a>
@@ -314,7 +314,7 @@
          </div>
 
         <!-- videos container grid layout -->
-        <div class="grid grid-cols-1 gap-y-6 p-2 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6 sm:p-4 md:grid-cols-3 md:gap-x-2 md:gap-y-6 md:p-4 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-6 lg:p-4 xl:grid-cols-4 xl:gap-x-4 xl:gap-y-10 xl:p-6 h-full bg-mainBg" id="videos-container">
+        <div class="videos-container" id="videos-container">
             <!-- one video card -->
             <!-- <div class="flex flex-col space-y-3 cursor-pointer">
                 thumbnail
