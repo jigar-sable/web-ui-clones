@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Instagram/public/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assests/images/favicon.ico" type="image/x-icon">
     <title>Instagram</title>
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assests/style.css">
 </head>
 <body class="bg-gray-100">
-<style>
-#stories-container::-webkit-scrollbar {
-  display: none;
-}
-</style>
-
-
 
   <!-- sticky navbar -->
   <nav class="fixed top-0 bg-white w-full border-b z-10">
@@ -25,12 +18,12 @@
 
       <!-- logo -->
       <div class="">
-      <img class="mt-1.5 w-full h-full object-contain" src="/Instagram/public/images/logo.png" alt="">
+      <a href="#"><img class="mt-1.5 w-full h-full object-contain" src="./assests/images/logo.png" alt=""></a>
       </div>
 
       <!-- search box  -->
         <div class="hidden sm:flex items-center justify-center w-3/12 py-1 bg-gray-50 rounded border">
-          <svg class="h-3.5 w-3.5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <svg class="h-3.5 w-3.5 text-gray-500 ml-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
           </svg>
           <input class="bg-transparent ml-2 text-sm border-none outline-none" type="text" placeholder="Search">
@@ -38,18 +31,13 @@
 
       <!-- icons container  -->
       <div class="flex items-center space-x-5 mr-3">
-        
-        <svg aria-label="Home" class="_8-yf5 " fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path></svg>
-
-        <svg aria-label="Messenger" class="_8-yf5 " fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M36.2 16.7L29 22.2c-.5.4-1.2.4-1.7 0l-5.4-4c-1.6-1.2-3.9-.8-5 .9l-6.8 10.7c-.7 1 .6 2.2 1.6 1.5l7.3-5.5c.5-.4 1.2-.4 1.7 0l5.4 4c1.6 1.2 3.9.8 5-.9l6.8-10.7c.6-1.1-.7-2.2-1.7-1.5zM24 1C11 1 1 10.5 1 23.3 1 30 3.7 35.8 8.2 39.8c.4.3.6.8.6 1.3l.2 4.1c0 1 .9 1.8 1.8 1.8.2 0 .5 0 .7-.2l4.6-2c.2-.1.5-.2.7-.2.2 0 .3 0 .5.1 2.1.6 4.3.9 6.7.9 13 0 23-9.5 23-22.3S37 1 24 1zm0 41.6c-2 0-4-.3-5.9-.8-.4-.1-.8-.2-1.3-.2-.7 0-1.3.1-2 .4l-3 1.3V41c0-1.3-.6-2.5-1.6-3.4C6.2 34 4 28.9 4 23.3 4 12.3 12.6 4 24 4s20 8.3 20 19.3-8.6 19.3-20 19.3z"></path></svg>
-
-        <svg aria-label="Find People" class="_8-yf5 " fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path></svg>
-
-        <svg aria-label="Activity Feed" class="_8-yf5 " fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
-        
-        <img class="w-6 h-6 rounded-full object-cover" src="/Instagram/public/images/hero.png" alt="">
-      
+        <svg aria-label="Home" class="cursor-pointer" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path></svg>
+        <svg aria-label="Messenger" class="cursor-pointer" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M36.2 16.7L29 22.2c-.5.4-1.2.4-1.7 0l-5.4-4c-1.6-1.2-3.9-.8-5 .9l-6.8 10.7c-.7 1 .6 2.2 1.6 1.5l7.3-5.5c.5-.4 1.2-.4 1.7 0l5.4 4c1.6 1.2 3.9.8 5-.9l6.8-10.7c.6-1.1-.7-2.2-1.7-1.5zM24 1C11 1 1 10.5 1 23.3 1 30 3.7 35.8 8.2 39.8c.4.3.6.8.6 1.3l.2 4.1c0 1 .9 1.8 1.8 1.8.2 0 .5 0 .7-.2l4.6-2c.2-.1.5-.2.7-.2.2 0 .3 0 .5.1 2.1.6 4.3.9 6.7.9 13 0 23-9.5 23-22.3S37 1 24 1zm0 41.6c-2 0-4-.3-5.9-.8-.4-.1-.8-.2-1.3-.2-.7 0-1.3.1-2 .4l-3 1.3V41c0-1.3-.6-2.5-1.6-3.4C6.2 34 4 28.9 4 23.3 4 12.3 12.6 4 24 4s20 8.3 20 19.3-8.6 19.3-20 19.3z"></path></svg>
+        <svg aria-label="Find People" class="cursor-pointer" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path></svg>
+        <svg aria-label="Activity Feed" class="cursor-pointer" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+        <a href="#"><img class="w-6 h-6 rounded-full object-cover" src="./assests/images/hero.png" alt=""></a>
       </div>
+
     </div>
   </nav>
 
@@ -58,87 +46,136 @@
     <div class="flex flex-col w-full lg:w-2/3 sm:mt-6 sm:px-8 mb-8">
     
       <!-- stories container -->
-      <div class="w-full bg-white py-4 flex flex-auto overflow-x-auto border rounded" id="stories-container">
+      <div class="w-full bg-white py-4 px-2 flex flex-auto overflow-x-auto scrollbar-none border rounded">
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
 
         <!-- one story -->
-        <div class="flex flex-col justify-center items-center p-2 space-y-0.5">
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
           <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
-          <img class="rounded-full border border-gray-300 object-cover" src="/Instagram/public/images/hero.png" draggable=false alt="">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
           </div>
-          <span class="text-xs">devuinux</span>
+          <span class="text-xs">jhon_doe</span>
         </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">jhon_doe</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">jhon_doe</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">jhon_doe</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">jhon_doe</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">jhon_doe</span>
+        </div>
+
+        <!-- one story -->
+        <div class="flex flex-col justify-center items-center p-2 space-y-0.5 cursor-pointer">
+          <div class="w-16 p-0.5 h-full rounded-full border-2 border-red-500">
+          <img class="rounded-full border border-gray-300 object-cover" src="./assests/images/hero.png" draggable=false alt="">
+          </div>
+          <span class="text-xs">jhon_doe</span>
+        </div>
+
 
       </div>
 
@@ -148,25 +185,23 @@
         <!-- one post card -->
         <div class="flex flex-col flex-auto border w-full rounded bg-white">
 
-          <!-- name with menu icon -->
+          <!-- id with menu icon -->
           <div class="flex justify-between px-3 py-2 border-b items-center">
           <!-- icon with name -->
           <div class="flex flex-auto space-x-3 items-center">
           <div class="w-11 h-11 p-0.5 rounded-full border-2 border-red-600">
-            <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="">
+            <a href="#"><img class="w-full h-full rounded-full border object-cover" src="./assests/images/hero.png" alt=""></a>
           </div>
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
+            <a class="text-black text-sm font-semibold hover:underline" href="#">jhon_doe</a>
           </div>
           <!-- menu bar -->
           <div class="items-center">
-            <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" role="img" viewBox="0 0 48 48" width="18"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
+            <svg aria-label="More options" class="cursor-pointer" fill="#262626" height="16" role="img" viewBox="0 0 48 48" width="18"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
           </div>
           </div>
 
           <!-- post image container -->
-          <!-- <div class="flex-auto"> -->
-          <img class="w-full h-full object-cover object-center" src="/Instagram/public/images/hero.png" alt="">
-          <!-- </div> -->
+          <img class="w-full h-full object-cover object-center" src="./assests/images/hero.png" alt="">
 
           <!-- like comment container -->
           <div class="flex flex-col px-3 space-y-1 border-b pb-2">
@@ -174,287 +209,35 @@
           <div class="flex items-center justify-between py-2">
           <!-- left icons container -->
           <div class="flex space-x-4">
-            <svg aria-label="Like" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
-
-            <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
-
-            <svg aria-label="Share Post" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
-
+            <svg aria-label="Like" class="cursor-pointer" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+            <svg aria-label="Comment" class="cursor-pointer" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
+            <svg aria-label="Share Post" class="cursor-pointer" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
           </div>
           <!-- right saved icon container -->
-          <svg aria-label="Save" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
+          <svg aria-label="Save" class="cursor-pointer" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
           </div>
 
           <!-- likes  -->
-          <span class="w-full font-semibold text-sm">200 likes</span>
+          <a href="#" class="w-full font-semibold text-sm">200 likes</a>
 
           <!-- comment -->
           <div class="flex flex-auto items-center space-x-1">
-            <a href="" class="text-sm font-semibold">uidosesp</a>
-            <span class="text-sm">Solo Travel Planner App UI Design</span>
+            <a href="" class="text-sm font-semibold hover:underline">james07</a>
+            <span class="text-sm">Lorem ipsum dolor sit amet consectetur</span>
           </div>
 
           <!-- time -->
-          <span class="text-xs text-gray-500">2 HOURS AGO</span>
+          <a href="#" class="text-xs text-gray-500">2 HOURS AGO</a>
           </div>
 
           <!-- comment input container -->
           <div class="flex items-center justify-between p-3 w-full space-x-3">
-            <svg aria-label="Emoji" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
+            <svg aria-label="Emoji" class="cursor-pointer" fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
             <input class="flex-auto text-sm outline-none border-none bg-transparent" type="text" placeholder="Add a comment...">
             <a href="" class="text-sm font-semibold text-blue-600">Post</a>
           </div>
           
-        </div>
-
-        <!-- one post card -->
-        <div class="flex flex-col flex-auto border w-full rounded bg-white">
-
-          <!-- name with menu icon -->
-          <div class="flex justify-between px-3 py-2 border-b items-center">
-          <!-- icon with name -->
-          <div class="flex flex-auto space-x-3 items-center">
-          <div class="w-11 h-11 p-0.5 rounded-full border-2 border-red-600">
-            <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="">
-          </div>
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-          </div>
-          <!-- menu bar -->
-          <div class="items-center">
-            <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" role="img" viewBox="0 0 48 48" width="18"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
-          </div>
-          </div>
-
-          <!-- post image container -->
-          <!-- <div class="flex-auto"> -->
-          <img class="w-full h-full object-cover object-center" src="/Instagram/public/images/ganesh.jpg" alt="">
-          <!-- </div> -->
-
-          <!-- like comment container -->
-          <div class="flex flex-col px-3 space-y-1 border-b pb-2">
-          <!-- icons container -->
-          <div class="flex items-center justify-between py-2">
-          <!-- left icons container -->
-          <div class="flex space-x-4">
-            <svg aria-label="Like" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
-
-            <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
-
-            <svg aria-label="Share Post" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
-
-          </div>
-          <!-- right saved icon container -->
-          <svg aria-label="Save" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
-          </div>
-
-          <!-- likes  -->
-          <span class="w-full font-semibold text-sm">200 likes</span>
-
-          <!-- comment -->
-          <div class="flex flex-auto items-center space-x-1">
-            <a href="" class="text-sm font-semibold">uidosesp</a>
-            <span class="text-sm">Solo Travel Planner App UI Design</span>
-          </div>
-
-          <!-- time -->
-          <span class="text-xs text-gray-500">2 HOURS AGO</span>
-          </div>
-
-          <!-- comment input container -->
-          <div class="flex items-center justify-between p-3 w-full space-x-3">
-            <svg aria-label="Emoji" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
-            <input class="flex-auto text-sm outline-none border-none bg-transparent" type="text" placeholder="Add a comment...">
-            <a href="" class="text-sm font-semibold text-blue-600">Post</a>
-          </div>
-          
-        </div>
-
-        <!-- one post card -->
-        <div class="flex flex-col flex-auto border w-full rounded bg-white">
-
-          <!-- name with menu icon -->
-          <div class="flex justify-between px-3 py-2 border-b items-center">
-          <!-- icon with name -->
-          <div class="flex flex-auto space-x-3 items-center">
-          <div class="w-11 h-11 p-0.5 rounded-full border-2 border-red-600">
-            <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="">
-          </div>
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-          </div>
-          <!-- menu bar -->
-          <div class="items-center">
-            <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" role="img" viewBox="0 0 48 48" width="18"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
-          </div>
-          </div>
-
-          <!-- post image container -->
-          <!-- <div class="flex-auto"> -->
-          <img class="w-full h-full object-cover object-center" src="/Instagram/public/images/android.png" alt="">
-          <!-- </div> -->
-
-          <!-- like comment container -->
-          <div class="flex flex-col px-3 space-y-1 border-b pb-2">
-          <!-- icons container -->
-          <div class="flex items-center justify-between py-2">
-          <!-- left icons container -->
-          <div class="flex space-x-4">
-            <svg aria-label="Like" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
-
-            <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
-
-            <svg aria-label="Share Post" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
-
-          </div>
-          <!-- right saved icon container -->
-          <svg aria-label="Save" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
-          </div>
-
-          <!-- likes  -->
-          <span class="w-full font-semibold text-sm">200 likes</span>
-
-          <!-- comment -->
-          <div class="flex flex-auto items-center space-x-1">
-            <a href="" class="text-sm font-semibold">uidosesp</a>
-            <span class="text-sm">Solo Travel Planner App UI Design</span>
-          </div>
-
-          <!-- time -->
-          <span class="text-xs text-gray-500">2 HOURS AGO</span>
-          </div>
-
-          <!-- comment input container -->
-          <div class="flex items-center justify-between p-3 w-full space-x-3">
-            <svg aria-label="Emoji" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
-            <input class="flex-auto text-sm outline-none border-none bg-transparent" type="text" placeholder="Add a comment...">
-            <a href="" class="text-sm font-semibold text-blue-600">Post</a>
-          </div>
-          
-        </div>
-
-        <!-- one post card -->
-        <div class="flex flex-col flex-auto border w-full rounded bg-white">
-
-          <!-- name with menu icon -->
-          <div class="flex justify-between px-3 py-2 border-b items-center">
-          <!-- icon with name -->
-          <div class="flex flex-auto space-x-3 items-center">
-          <div class="w-11 h-11 p-0.5 rounded-full border-2 border-red-600">
-            <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="">
-          </div>
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-          </div>
-          <!-- menu bar -->
-          <div class="items-center">
-            <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" role="img" viewBox="0 0 48 48" width="18"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
-          </div>
-          </div>
-
-          <!-- post image container -->
-          <!-- <div class="flex-auto"> -->
-          <img class="w-full h-full object-cover object-center" src="/Instagram/public/images/android.png" alt="">
-          <!-- </div> -->
-
-          <!-- like comment container -->
-          <div class="flex flex-col px-3 space-y-1 border-b pb-2">
-          <!-- icons container -->
-          <div class="flex items-center justify-between py-2">
-          <!-- left icons container -->
-          <div class="flex space-x-4">
-            <svg aria-label="Like" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
-
-            <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
-
-            <svg aria-label="Share Post" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
-
-          </div>
-          <!-- right saved icon container -->
-          <svg aria-label="Save" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
-          </div>
-
-          <!-- likes  -->
-          <span class="w-full font-semibold text-sm">200 likes</span>
-
-          <!-- comment -->
-          <div class="flex flex-auto items-center space-x-1">
-            <a href="" class="text-sm font-semibold">uidosesp</a>
-            <span class="text-sm">Solo Travel Planner App UI Design</span>
-          </div>
-
-          <!-- time -->
-          <span class="text-xs text-gray-500">2 HOURS AGO</span>
-          </div>
-
-          <!-- comment input container -->
-          <div class="flex items-center justify-between p-3 w-full space-x-3">
-            <svg aria-label="Emoji" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
-            <input class="flex-auto text-sm outline-none border-none bg-transparent" type="text" placeholder="Add a comment...">
-            <a href="" class="text-sm font-semibold text-blue-600">Post</a>
-          </div>
-          
-        </div>
-
-        <!-- one post card -->
-        <div class="flex flex-col flex-auto border w-full rounded bg-white">
-
-          <!-- name with menu icon -->
-          <div class="flex justify-between px-3 py-2 border-b items-center">
-          <!-- icon with name -->
-          <div class="flex flex-auto space-x-3 items-center">
-          <div class="w-11 h-11 p-0.5 rounded-full border-2 border-red-600">
-            <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="">
-          </div>
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-          </div>
-          <!-- menu bar -->
-          <div class="items-center">
-            <svg aria-label="More options" class="_8-yf5 " fill="#262626" height="16" role="img" viewBox="0 0 48 48" width="18"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
-          </div>
-          </div>
-
-          <!-- post image container -->
-          <!-- <div class="flex-auto"> -->
-          <img class="w-full h-full object-cover object-center" src="/Instagram/public/images/ganesh.jpg" alt="">
-          <!-- </div> -->
-
-          <!-- like comment container -->
-          <div class="flex flex-col px-3 space-y-1 border-b pb-2">
-          <!-- icons container -->
-          <div class="flex items-center justify-between py-2">
-          <!-- left icons container -->
-          <div class="flex space-x-4">
-            <svg aria-label="Like" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
-
-            <svg aria-label="Comment" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
-
-            <svg aria-label="Share Post" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
-
-          </div>
-          <!-- right saved icon container -->
-          <svg aria-label="Save" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
-          </div>
-
-          <!-- likes  -->
-          <span class="w-full font-semibold text-sm">200 likes</span>
-
-          <!-- comment -->
-          <div class="flex flex-auto items-center space-x-1">
-            <a href="" class="text-sm font-semibold">uidosesp</a>
-            <span class="text-sm">Solo Travel Planner App UI Design</span>
-          </div>
-
-          <!-- time -->
-          <span class="text-xs text-gray-500">2 HOURS AGO</span>
-          </div>
-
-          <!-- comment input container -->
-          <div class="flex items-center justify-between p-3 w-full space-x-3">
-            <svg aria-label="Emoji" class="_8-yf5 " fill="#262626" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
-            <input class="flex-auto text-sm outline-none border-none bg-transparent" type="text" placeholder="Add a comment...">
-            <a href="" class="text-sm font-semibold text-blue-600">Post</a>
-          </div>
-          
-        </div>
-        
+        </div>        
         
       </div>
 
@@ -470,11 +253,11 @@
         <div class="flex justify-between items-center">
           <div class="flex flex-auto space-x-4 items-center">
           <div class="w-14 h-14">
-            <img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt="">
+            <a href="#"><img class="w-full h-full rounded-full object-cover" src="./assests/images/hero.png" alt=""></a>
           </div>
           <div class="flex flex-col">
-            <span class="text-black text-sm font-semibold">jigarsable_</span>
-            <span class="text-gray-400 text-sm">Jigar Sable</span>
+            <a class="text-black text-sm font-semibold" href="#">jhon_doe</a>
+            <span class="text-gray-400 text-sm">Jhon Doe</span>
           </div>
           </div>
           <div class="items-center">
@@ -495,15 +278,15 @@
         <div class="flex justify-between items-center">
           <div class="flex flex-auto space-x-3 items-center">
           <div class="w-9 h-9">
-            <img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt="">
+            <a href=""><img class="w-full h-full rounded-full object-cover" src="./assests/images/hero.png" alt=""></a>
           </div>
           <div class="flex flex-col">
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-            <span class="text-gray-400 text-xs">Jigar Sable</span>
+            <a class="text-black text-sm font-semibold" href="#">jhon_doe</a>
+            <span class="text-gray-400 text-xs">New to Instagram</span>
           </div>
           </div>
           <div class="items-center">
-            <a href="" class="text-blue-700 text-xs font-semibold">Follow</a>
+            <a href="" class="text-blue-500 text-xs font-semibold">Follow</a>
           </div>
         </div>
 
@@ -511,15 +294,15 @@
         <div class="flex justify-between items-center">
           <div class="flex flex-auto space-x-3 items-center">
           <div class="w-9 h-9">
-            <img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt="">
+            <a href=""><img class="w-full h-full rounded-full object-cover" src="./assests/images/hero.png" alt=""></a>
           </div>
           <div class="flex flex-col">
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-            <span class="text-gray-400 text-xs">Jigar Sable</span>
+            <a class="text-black text-sm font-semibold" href="#">jhon_doe</a>
+            <span class="text-gray-400 text-xs">New to Instagram</span>
           </div>
           </div>
           <div class="items-center">
-            <a href="" class="text-blue-700 text-xs font-semibold">Follow</a>
+            <a href="" class="text-blue-500 text-xs font-semibold">Follow</a>
           </div>
         </div>
 
@@ -527,15 +310,15 @@
         <div class="flex justify-between items-center">
           <div class="flex flex-auto space-x-3 items-center">
           <div class="w-9 h-9">
-            <img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt="">
+            <a href=""><img class="w-full h-full rounded-full object-cover" src="./assests/images/hero.png" alt=""></a>
           </div>
           <div class="flex flex-col">
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-            <span class="text-gray-400 text-xs">Jigar Sable</span>
+            <a class="text-black text-sm font-semibold" href="#">jhon_doe</a>
+            <span class="text-gray-400 text-xs">New to Instagram</span>
           </div>
           </div>
           <div class="items-center">
-            <a href="" class="text-blue-700 text-xs font-semibold">Follow</a>
+            <a href="" class="text-blue-500 text-xs font-semibold">Follow</a>
           </div>
         </div>
 
@@ -543,15 +326,15 @@
         <div class="flex justify-between items-center">
           <div class="flex flex-auto space-x-3 items-center">
           <div class="w-9 h-9">
-            <img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt="">
+            <a href=""><img class="w-full h-full rounded-full object-cover" src="./assests/images/hero.png" alt=""></a>
           </div>
           <div class="flex flex-col">
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-            <span class="text-gray-400 text-xs">Jigar Sable</span>
+            <a class="text-black text-sm font-semibold" href="#">jhon_doe</a>
+            <span class="text-gray-400 text-xs">New to Instagram</span>
           </div>
           </div>
           <div class="items-center">
-            <a href="" class="text-blue-700 text-xs font-semibold">Follow</a>
+            <a href="" class="text-blue-500 text-xs font-semibold">Follow</a>
           </div>
         </div>
 
@@ -559,15 +342,15 @@
         <div class="flex justify-between items-center">
           <div class="flex flex-auto space-x-3 items-center">
           <div class="w-9 h-9">
-            <img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt="">
+            <a href=""><img class="w-full h-full rounded-full object-cover" src="./assests/images/hero.png" alt=""></a>
           </div>
           <div class="flex flex-col">
-            <span class="text-black text-sm font-semibold">sable_jigar</span>
-            <span class="text-gray-400 text-xs">Jigar Sable</span>
+            <a class="text-black text-sm font-semibold" href="#">jhon_doe</a>
+            <span class="text-gray-400 text-xs">New to Instagram</span>
           </div>
           </div>
           <div class="items-center">
-            <a href="" class="text-blue-700 text-xs font-semibold">Follow</a>
+            <a href="" class="text-blue-500 text-xs font-semibold">Follow</a>
           </div>
         </div>
         
@@ -578,19 +361,19 @@
         <div class="flex flex-col mt-8 space-y-6">
           <div class="flex flex-col">
             <div class="flex items-center space-x-1.5">
-              <a href="" class="text-xs text-gray-400">About</a>
-              <a href="" class="text-xs text-gray-400">Help</a>
-              <a href="" class="text-xs text-gray-400">Press</a>
-              <a href="" class="text-xs text-gray-400">API</a>
-              <a href="" class="text-xs text-gray-400">Jobs</a>
-              <a href="" class="text-xs text-gray-400">Privacy</a>
-              <a href="" class="text-xs text-gray-400">Terms</a>
-              <a href="" class="text-xs text-gray-400">Locations</a>
+              <a href="#" class="text-xs text-gray-400">About</a>
+              <a href="#" class="text-xs text-gray-400">Help</a>
+              <a href="#" class="text-xs text-gray-400">Press</a>
+              <a href="#" class="text-xs text-gray-400">API</a>
+              <a href="#" class="text-xs text-gray-400">Jobs</a>
+              <a href="#" class="text-xs text-gray-400">Privacy</a>
+              <a href="#" class="text-xs text-gray-400">Terms</a>
+              <a href="#" class="text-xs text-gray-400">Locations</a>
             </div>
             <div class="flex items-center space-x-1.5">
-              <a href="" class="text-xs text-gray-400">Top Accounts</a>
-              <a href="" class="text-xs text-gray-400">Hashtags</a>
-              <a href="" class="text-xs text-gray-400">Language</a>
+              <a href="#" class="text-xs text-gray-400">Top Accounts</a>
+              <a href="#" class="text-xs text-gray-400">Hashtags</a>
+              <a href="#" class="text-xs text-gray-400">Language</a>
             </div>
           </div>
         <span class="text-xs text-gray-400">&copy; 2021 INSTAGRAM FROM FACEBOOK</span>
@@ -600,5 +383,7 @@
 
   </div>
    
+
+<script src="./assests/script.js"></script>
 </body>
 </html>

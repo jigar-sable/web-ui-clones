@@ -6,9 +6,11 @@
   "dependencies": {
     "tailwindcss": "^2.2.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tailwind-scrollbar": "^1.3.1"
+  },
   "scripts": {
-    "build:css": "tailwind build -i src/style.css -o public/style.css"
+    "build:css": "tailwind build -i src/style.css -o public/assests/style.css"
   },
   "author": "Jigar Sable",
   "license": "ISC"
