@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Sololearn/public/images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../public/assests/images/favicon.svg" type="image/x-icon">
     <title>Sololearn: Learn to Code</title>
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 font-firasans">
+<body class="bg-gray-100 font-firasans">
 
   <!-- navbar -->
   <nav class="bg-white p-2 w-full shadow">
@@ -36,8 +36,8 @@
     <div class="hidden lg:flex items-center justify-between space-x-6">
       <button class="flex items-center px-3 py-2.5 hover:bg-blue-100 text-blue-900 rounded-md font-bold">
         <svg class="w-5 h-5" id="bit1Cube" viewBox="0 0 16 20"><g fill="none"><path d="M16 5.897c0-.82-.44-1.576-1.151-1.983L9.134.648a2.286 2.286 0 0 0-2.268 0L1.152 3.914A2.286 2.286 0 0 0 0 5.898v7.633c0 .82.439 1.576 1.15 1.984h.002l5.714 3.266l.002.001c.702.4 1.562.4 2.264 0l.002-.001l5.714-3.265l.002-.002A2.286 2.286 0 0 0 16 13.531V5.897z" fill="#8153E1"></path><path d="M16 5.896v7.635c0 .82-.44 1.577-1.152 1.984L9.134 18.78c-.351.201-.743.301-1.134.301V9.143l7.69-4.395c.2.343.31.737.31 1.148z" fill="#AB88F3"></path><path d="M15.688 4.749l-7.69 4.394L.308 4.75c.198-.342.486-.632.841-.835L6.864.648a2.286 2.286 0 0 1 2.268 0l5.714 3.266c.355.203.643.493.842.835z" fill="#D4CCF5"></path></g></svg>
-        &nbsp;200</button>
-      <img class="w-8 h-8 rounded-full object-cover" src="/Sololearn/public/hero.png" alt="">
+        &nbsp;1021</button>
+      <a href="#"><img class="w-8 h-8 rounded-full object-cover" src="../public/assests/images/hero.png" alt=""></a>
     </div>
 
     <!-- mobile menu  -->
@@ -75,8 +75,8 @@
     <!-- profile navbar -->
     <div class="flex justify-between items-center px-6 py-4 border">
       <div class="flex items-center space-x-4">
-      <img class="w-8 h-8 rounded-full object-cover" src="/Sololearn/public/hero.png" alt="">
-      <span class="text-gray-600 font-bold">Jigar Sable</span>
+      <img class="w-8 h-8 rounded-full object-cover" src="../public/assests/images/hero.png" alt="">
+      <span class="text-gray-600 font-bold">Jhon Doe</span>
       </div>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -95,35 +95,28 @@
 
 
   <!-- main section -->
-  <div class="flex flex-col mt-8 sm:w-full md:w-4/5 lg:w-2/3 h-screen mx-auto">
+  <div class="flex flex-col mt-8 sm:w-full md:w-4/5 lg:w-2/3 h-full mx-auto">
     <!-- <div class="flex flex-auto items-center justify-center"> -->
     <h2 class="text-2xl font-bold text-center text-gray-700">What would you like to learn?</h2>
     <!-- </div> -->
 
     <!-- courses container -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4 mt-6 px-8 py-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4 mt-6 px-3 sm:px-8 py-4" id="course-container">
       
       <!-- one course card -->
-      <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-75">
-        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-green-300">
+      <!-- <div class="flex flex-col items-center justify-center space-y-3 px-2 py-6 border border-b-4 rounded-md bg-white cursor-pointer transform hover:-translate-y-1 transition duration-75 ease-linear">
+        <div class="w-20 h-20 p-0.5 rounded-full border-4 border-gray-300">
         <img class="w-full h-full rounded-full border object-cover" src="/Instagram/public/images/hero.png" alt="" srcset="">
         </div>
         <h2 class="text-lg font-bold text-gray-800">Python Core</h2>
         <span class="text-sm text-gray-400">7.3M Learners</span>
-      </div>
+      </div> -->
 
 
     </div>
   </div>
 
 
-
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobMenu = document.getElementById('mobMenu');
-    menuBtn.addEventListener('click', () => {
-      mobMenu.classList.toggle("hidden");
-    })
-  </script>
+<script src="./assests/script.js"></script>
 </body>
 </html>
