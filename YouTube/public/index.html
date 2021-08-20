@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body class="font-roboto">
+<body class="font-roboto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scrollbar-track-mainBg bg-topNavBg">
 <style>
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-21 { font-size: 21px; }
@@ -63,7 +63,7 @@
     <!-- main container -->
     <div class="flex flex-row">
         <!-- left sidebar fixed -->
-        <div class="hidden fixed w-60 bg-sideBarBg h-screen lg:flex flex-col overflow-y-auto pr-4 pt-2">
+        <div class="hidden fixed w-60 bg-sideBarBg h-full lg:flex flex-col overflow-y-auto pr-4 pt-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scrollbar-track-sideBarBg">
             <!-- main home explore btns -->
             <div class="flex flex-col w-full mb-2">
                 <div class="flex items-center space-x-5 bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
@@ -116,6 +116,36 @@
             </div>
 
             <div class="border border-searchIconBg"></div>
+
+            <!-- library history btns -->
+            <div class="flex flex-col w-full mb-2 mt-3">
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">video_library</i>
+                    <h2 class="text-sm text-white">Library</h2>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">history</i>
+                    <h2 class="text-sm text-white">History</h2>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">slideshow</i>
+                    <h2 class="text-sm text-white">Your videos</h2>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">watch_later</i>
+                    <h2 class="text-sm text-white">Watch later</h2>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">thumb_up</i>
+                    <h2 class="text-sm text-white">Liked videos</h2>
+                </div>
+
+            </div>
 
             <!-- library history btns -->
             <div class="flex flex-col w-full mb-2 mt-3">
@@ -227,14 +257,32 @@
         <!-- ====== WORK IN PROGRESS ====== -->
 
         <!-- main videos container -->
-        <div class="flex flex-auto flex-col lg:ml-60">
+        <div class="flex flex-col lg:ml-60 w-full lg:w-4/5 xl:w-5/6">
 
         <!-- tags pills fixed navbar -->
-        <div class="relative sticky top-14 flex items-center space-x-3 px-5 py-2.5 border-t border-b border-sideBarHoverBg bg-topNavBg bg-opacity-95 z-20">
+        <div class="relative sticky top-14 flex flex-auto items-center space-x-3 px-5 py-2.5 border-t border-b border-sideBarHoverBg bg-topNavBg bg-opacity-95 z-20 overflow-x-scroll overflow-y-hidden scrollbar-none">
+
             <!-- one pill -->
-            <a href="" class="text-sm truncate bg-white py-1.5 px-3 rounded-full text-black">All</a>
-            <a href="" class="text-sm truncate bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
-            <a href="" class="text-sm truncate bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer Application</a>
+            <a href="" class="text-sm bg-white py-1.5 px-3 rounded-full text-black">All</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer</a>
          </div>
 
         <!-- videos container grid layout -->
