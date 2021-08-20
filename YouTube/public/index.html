@@ -37,12 +37,12 @@
             <!-- search container -->
             <div class="flex items-center space-x-2 w-1/2">
                 <!-- input box -->
-                <div class="flex items-center flex-auto justify-between rounded">
-                    <input class="bg-gray-700 w-full rounded-l outline-none border-none p-1 pl-3" type="text" placeholder="Search">
+                <div class="flex items-center flex-auto justify-between rounded border border-sideBarHoverBg">
+                    <input class="bg-searchBarBg w-full rounded-l outline-none border-none p-0.5 pl-3 text-white placeholder-gray-500" type="text" placeholder="Search">
                     
-                    <i class="material-icons md-18 text-center rounded-r text-gray-300 p-2 w-20 bg-gray-600">search</i>
+                    <i class="material-icons md-21 text-center rounded-r text-gray-300 p-1 w-20 bg-searchIconBg">search</i>
                 </div>
-                <div class="flex items-center justify-center w-8 h-8 rounded-full bg-black">
+                <div class="flex items-center justify-center w-9 h-9 rounded-full bg-mainBg">
                     <i class="material-icons text-white">mic</i>
                 </div>
             </div>
@@ -63,341 +63,567 @@
     <!-- main container -->
     <div class="flex flex-row">
         <!-- left sidebar fixed -->
-        <div class="fixed w-60 bg-sideBarBg h-screen flex flex-col overflow-y-auto pr-4 pt-2">
+        <div class="hidden fixed w-60 bg-sideBarBg h-screen flex flex-col overflow-y-auto pr-4 pt-2">
             <!-- main home explore btns -->
             <div class="flex flex-col w-full mb-2">
-                <div class="flex items-center space-x-5 bg-gray-600 px-7 py-2.5 cursor-pointer">
+                <div class="flex items-center space-x-5 bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
                     <i class="material-icons text-white md-21">home</i>
                     <h2 class="text-sm font-semibold text-white">Home</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2 cursor-pointer">
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
                     <i class="material-icons text-gray-400 md-21">explore</i>
                     <h2 class="text-sm text-white">Explore</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2 cursor-pointer">
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
                     <i class="material-icons text-gray-400 md-21">subscriptions</i>
                     <h2 class="text-sm text-white">Subscriptions</h2>
                 </div>
 
             </div>
 
-            <div class="border"></div>
+            <div class="border border-searchIconBg"></div>
 
             <!-- library history btns -->
             <div class="flex flex-col w-full mb-2 mt-3">
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2.5 cursor-pointer">
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
                     <i class="material-icons text-gray-400 md-21">video_library</i>
                     <h2 class="text-sm text-white">Library</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2.5 cursor-pointer">
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
                     <i class="material-icons text-gray-400 md-21">history</i>
                     <h2 class="text-sm text-white">History</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2.5 cursor-pointer">
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
                     <i class="material-icons text-gray-400 md-21">slideshow</i>
                     <h2 class="text-sm text-white">Your videos</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2.5 cursor-pointer">
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
                     <i class="material-icons text-gray-400 md-21">watch_later</i>
                     <h2 class="text-sm text-white">Watch later</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2.5 cursor-pointer">
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
                     <i class="material-icons text-gray-400 md-21">thumb_up</i>
                     <h2 class="text-sm text-white">Liked videos</h2>
                 </div>
 
             </div>
 
-            <div class="border"></div>
+            <div class="border border-searchIconBg"></div>
 
             <!-- library history btns -->
             <div class="flex flex-col w-full mb-2 mt-3">
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2 cursor-pointer">
-                    <i class="material-icons text-gray-400">video_library</i>
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">video_library</i>
                     <h2 class="text-sm text-white">Library</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2 cursor-pointer">
-                    <i class="material-icons text-gray-400">history</i>
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">history</i>
                     <h2 class="text-sm text-white">History</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2 cursor-pointer">
-                    <i class="material-icons text-gray-400">slideshow</i>
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">slideshow</i>
                     <h2 class="text-sm text-white">Your videos</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2 cursor-pointer">
-                    <i class="material-icons text-gray-400">watch_later</i>
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">watch_later</i>
                     <h2 class="text-sm text-white">Watch later</h2>
                 </div>
 
-                <div class="flex items-center space-x-5 hover:bg-gray-600 px-7 py-2 cursor-pointer">
-                    <i class="material-icons text-gray-400">thumb_up</i>
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">thumb_up</i>
                     <h2 class="text-sm text-white">Liked videos</h2>
                 </div>
 
             </div>
 
-            <div class="border"></div>
+        </div>
+
+        <!-- left sidebar fixed small-->
+        <div class="fixed bg-sideBarBg h-screen flex flex-col overflow-y-auto pt-2">
+            <!-- main home explore btns -->
+            <div class="flex flex-col w-full mb-2">
+                <div class="flex flex-col items-center justify-center space-x-5 bg-sideBarHoverBg px-2 py-2.5 cursor-pointer">
+                    <i class="material-icons text-white md-21">home</i>
+                    <span>Home</span>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">explore</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">subscriptions</i>
+                </div>
+
+            </div>
+
+            <div class="border border-searchIconBg"></div>
+
+            <!-- library history btns -->
+            <div class="flex flex-col w-full mb-2 mt-3">
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">video_library</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">history</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">slideshow</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">watch_later</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">thumb_up</i>
+                </div>
+
+            </div>
+
+            <div class="border border-searchIconBg"></div>
+
+            <!-- library history btns -->
+            <div class="flex flex-col w-full mb-2 mt-3">
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">video_library</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">history</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">slideshow</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">watch_later</i>
+                </div>
+
+                <div class="flex items-center space-x-5 hover:bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
+                    <i class="material-icons text-gray-400 md-21">thumb_up</i>
+                </div>
+
+            </div>
 
         </div>
 
         <!-- main videos container -->
-        <div class="flex flex-auto flex-col bg-pink-300 ml-60">
+        <div class="flex flex-auto flex-col ml-60">
 
         <!-- tags pills fixed navbar -->
-        <div class="relative sticky top-14 flex flex-row space-x-3 h-16 bg-topNavBg z-20">
-
+        <div class="relative sticky top-14 flex flex-row items-center space-x-3 px-5 py-2.5 border-t border-b border-sideBarHoverBg bg-topNavBg bg-opacity-95 z-20">
+            <!-- one pill -->
+            <a href="" class="text-sm bg-white py-1.5 px-3 rounded-full text-black">All</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer Application</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">All</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer Application</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer Application</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">CSS</a>
+            <a href="" class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700">Computer Application</a>
         </div>
+
+        <!-- videos container grid layout -->
         <div class="grid grid-cols-4 gap-x-4 gap-y-10 p-6 h-full bg-mainBg">
 
             <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+            <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>
             </div>
 
-            <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>
             </div>
 
-            <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>
             </div>
 
-            <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>
             </div>
 
-            <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>
             </div>
 
-            <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>
             </div>
 
-            <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>
             </div>
 
-            <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>
             </div>
 
-            <!-- one video card -->
-            <div class="flex flex-col space-y-3">
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
                 <!-- thumbnail -->
-                <div class="relative h-36 w-full">
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
                     <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
-                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs">38:38</span>
-                </div>
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
                 <!-- video details -->
-                <div class="flex flex-col flex-auto pr-3 space-y-1.5 mb-3">
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
 
                 <div class="flex items-center space-x-3">
                     <!-- channel logo -->
-                    <img src="/Instagram/public/images/hero.png" alt="" class="w-9 h-9 rounded-full">
-                    <p class="text-sm text-bold text-white">25+ Paid Open Source Programs and Internships</p>
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
                 </div>
 
                 <!-- channel link and meta data -->
                 <div class="flex flex-col ml-12">
-                    <a href="" class="text-gray-300 text-sm">CodeWithHarry</a>
-                    <div class="flex space-x-2">
-                        <span class="text-sm text-gray-300">15K views</span>
-                        <span class="text-sm text-gray-300">15K views</span>
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
+                <!-- thumbnail -->
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
+                    <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
+                <!-- video details -->
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
+
+                <div class="flex items-center space-x-3">
+                    <!-- channel logo -->
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
+                </div>
+
+                <!-- channel link and meta data -->
+                <div class="flex flex-col ml-12">
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
+                <!-- thumbnail -->
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
+                    <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
+                <!-- video details -->
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
+
+                <div class="flex items-center space-x-3">
+                    <!-- channel logo -->
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
+                </div>
+
+                <!-- channel link and meta data -->
+                <div class="flex flex-col ml-12">
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+             <!-- one video card -->
+             <div class="flex flex-col space-y-3 cursor-pointer">
+                <!-- thumbnail -->
+                <a href="life.com">
+                    <div class="relative h-36 w-full">
+                    <img class="relative h-full w-full object-cover" src="/Instagram/public/images/ganesh.jpg" alt="">
+                    <span class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+                    </div>
+                </a>
+                <!-- video details -->
+                <div class="flex flex-col flex-auto space-y-1.5 mb-3">
+
+                <div class="flex items-center space-x-3">
+                    <!-- channel logo -->
+                    <a href="yt.com" class="rounded-full w-14"><img class="w-full h-full rounded-full object-cover" src="/Instagram/public/images/hero.png" alt=""></a>
+                    <div class="flex items-start">
+                    <a href="hello.com" class="text-sm text-bold text-white pr-1">25+ Paid Open Source Programs and nternships</a>
+                    <i class="material-icons text-white md-21">more_vert</i>
+                    </div>
+                </div>
+
+                <!-- channel link and meta data -->
+                <div class="flex flex-col ml-12">
+                    <a href="" class="text-gray-400 text-sm hover:text-white">CodeWithHarry</a>
+                    <div class="flex space-x-1">
+                        <span class="text-sm text-gray-400">15K views</span>
+                        <span class="text-sm text-gray-400">• 15K views</span>
                     </div>
                 </div>
                 </div>

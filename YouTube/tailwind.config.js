@@ -18,7 +18,7 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
-      gray: colors.coolGray,
+      gray: colors.gray,
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
@@ -30,6 +30,10 @@ module.exports = {
       topNavBg: '#202020',
       mainBg: '#181818',
       sideBarBg: '#212121',
+      searchBarBg: '#121212',
+      searchIconBg: '#313131',
+      pillsBg: '#373737',
+      sideBarHoverBg: '#383838',
     },
     spacing: {
       px: '1px',
