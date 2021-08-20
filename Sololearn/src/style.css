@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mobMenu {
+    @apply relative w-full sm:absolute sm:w-2/5 sm:right-0 sm:z-10 lg:hidden hidden flex flex-col bg-white border shadow-md;
+}
+.course-container {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4 mt-6 px-3 sm:px-8 py-4;
+}

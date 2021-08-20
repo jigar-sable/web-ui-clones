@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build:tailwind": "tailwind build -i src/style.css -o public/style.css"
+    "build:css": "tailwind build -i src/style.css -o public/style.css"
   },
   "author": "Jigar Sable",
   "license": "ISC"

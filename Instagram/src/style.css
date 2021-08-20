@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.stories-container {
+    @apply w-full bg-white py-4 px-2 flex flex-auto overflow-x-auto scrollbar-none border rounded;
+}
+.sidebar {
+    @apply fixed lg:right-32 xl:right-40 w-3/12 h-full hidden lg:flex flex-col flex-auto m-8;
+}
+.posts-container {
+    @apply w-full h-full mt-1 sm:mt-6 flex flex-col space-y-4;
+}

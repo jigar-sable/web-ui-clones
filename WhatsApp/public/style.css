@@ -32218,6 +32218,66 @@ video {
   content: none;
 }
 
+.left-msg {
+  position: relative;
+  float: left;
+  clear: both;
+  margin-top: 0.125rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(38, 45, 49, var(--tw-bg-opacity));
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.right-msg {
+  position: relative;
+  float: right;
+  clear: both;
+  margin-top: 0.125rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(5, 97, 98, var(--tw-bg-opacity));
+  padding: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+#contact-list::-webkit-scrollbar{
+  width: .3rem;
+}
+
+#contact-list::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, .2);
+}
+
+#contact-list::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, .16);
+}
+
+#chats-container::-webkit-scrollbar{
+  width: .4rem;
+}
+
+#chats-container::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+#chats-container::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, .2);
+}
+
+#contact-list-item:hover .arrow {
+  display: block;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
