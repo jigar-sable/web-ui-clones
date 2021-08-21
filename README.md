@@ -1,11 +1,11 @@
-## Web-UI-Clones
+## Web UI Clones
 Website UI Clones using TailwindCSS ⚡⚡
-- [x] WhatsApp
-- [x] YouTube
-- [x] Instagram
-- [x] Sololearn
+- [x] <a href="https://whatsappwebui.netlify.app/" target="_blank">**WhatsApp Web**</a>
+- [x] <a href="https://youtubewebui.netlify.app" target="_blank">**YouTube**</a>
+- [x] <a href="https://instagramwebui.netlify.app" target="_blank">**Instagram**</a>
+- [x] <a href="https://sololearnwebui.netlify.app" target="_blank">**Sololearn**</a>
 - [ ] Telegram
-- Create an issue to add the one which you want!
+- [ ] Netflix
 
 ## Tech Stack
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)](https://github.com/jigar-sable/Web-UI-Clones/search?l=html)
