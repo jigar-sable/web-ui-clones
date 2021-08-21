@@ -8,7 +8,7 @@
     @apply font-roboto scrollbar-thin scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500 scrollbar-thumb-rounded-full scrollbar-track-mainBg bg-topNavBg;
 }
 .sidebar {
-    @apply pb-16 hidden fixed w-60 bg-sideBarBg h-full lg:flex flex-col pr-4 pt-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scrollbar-track-sideBarBg;
+    @apply hidden fixed w-60 bg-sideBarBg h-full lg:flex flex-col mt-12 pb-16 pr-4 pt-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scrollbar-track-sideBarBg;
 }
 .tags-container {
     @apply relative sticky top-14 flex flex-auto items-center space-x-3 px-5 py-2.5 border-t border-b border-sideBarHoverBg bg-topNavBg bg-opacity-95 z-20 overflow-x-scroll overflow-y-hidden scrollbar-none;

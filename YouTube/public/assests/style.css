@@ -1194,6 +1194,7 @@ video {
 
 .sidebar {
   position: fixed;
+  margin-top: 3rem;
   display: none;
   height: 100%;
   width: 15rem;
