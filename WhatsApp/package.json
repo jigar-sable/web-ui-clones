@@ -9,7 +9,8 @@
   "author": "Jigar",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^2.2.7",
+    "win-node-env": "^0.4.0"
   },
   "devDependencies": {
     "tailwindcss-pseudo-elements": "^2.0.0"
