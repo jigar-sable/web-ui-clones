@@ -26,6 +26,8 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      // custom colors
+      primary: '#2874f0',
     },
     spacing: {
       px: '1px',
