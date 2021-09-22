@@ -59,4 +59,12 @@ $(document).ready(function() {
         }
     });
 
+    $(window).scroll(function(){
+        if(scrollY > 150) {
+            $('header').addClass('shadow-lg');
+        } else {
+            $('header').removeClass('shadow-lg');
+        }
+    });
+
 });
