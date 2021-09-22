@@ -2,7 +2,7 @@
   "name": "youtube-ui-clone",
   "version": "1.0.0",
   "description": "YouTube Web UI Clone",
-  "main": "index.js",
+  "main": "index.js", 
   "scripts": {
     "build:css": "tailwind build -i src/style.css -o public/assests/style.css",
     "prod": "NODE_ENV=production tailwind build -i src/style.css -o public/assests/style.css"

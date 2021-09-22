@@ -1,0 +1,15 @@
+{
+  "name": "flipkart",
+  "version": "1.0.0",
+  "description": "Flipkart Web UI Clone",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^2.2.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:css": "tailwind build -i src/style.css -o public/assets/style.css"
+  },
+  "author": "Jigar Sable",
+  "license": "ISC"
+}
