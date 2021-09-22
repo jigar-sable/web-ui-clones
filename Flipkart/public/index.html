@@ -19,6 +19,9 @@
   top: 30%;
   outline: none;
 }
+ #topSelection .owl-carousel .owl-nav button {
+     top: 20%;
+ }
  .owl-carousel .owl-nav button.owl-prev {
   left: 2.5rem;
 }
@@ -41,12 +44,15 @@
     padding: 2.5rem 1.5rem;
     padding-left: 1rem;
 }
+ .owl-next.disabled, .owl-prev.disabled {
+    display: none !important;
+}
 </style>
 </head>
 <body class="bg-gray-100">
 
     <!-- header starts -->
-    <header class="bg-primary fixed top-0 py-2.5 w-full">
+    <header class="bg-primary fixed top-0 py-2.5 w-full z-10">
 
         <!-- navbar container -->
         <div class="w-9/12 m-auto flex justify-between items-center">
@@ -191,19 +197,387 @@
     <!-- categories container header -->
 
     <!-- main sections starts -->
-    <div class="flex flex-col gap-2 px-2 mt-2">
+    <main class="flex flex-col gap-3 px-2 mt-2">
 
     <!-- banner section -->
-    <div class="h-72 w-full bg-green-300 rounded-sm shadow owl-carousel owl-theme relative overflow-hidden">
+    <section class="h-72 w-full bg-green-300 rounded-sm shadow owl-carousel owl-theme relative overflow-hidden" id="banner">
         <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
         <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
         <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
         <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
         <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
-    </div>
+    </section>
     <!-- banner section -->
+    
 
-    </div>
+    <section id="topSelection" class="bg-white w-full h-80 shadow overflow-hidden">
+        <!-- header -->
+        <div class="flex px-4 py-3 justify-between items-center">
+            <h1 class="text-xl font-medium">Top Selection</h1>
+            <a href="#" class="bg-primary text-xs font-medium text-white px-5 py-2.5 rounded-sm shadow-lg">VIEW ALL</a>
+        </div>
+        <hr>
+        <!-- header -->
+        
+        <!-- products container -->
+        <div class="flex items-center justify-between owl-carousel owl-theme relative">
+
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+        </div>
+        <!-- products container -->
+    </section>
+
+    <section id="topSelection" class="bg-white w-full h-80 shadow overflow-hidden">
+        <!-- header -->
+        <div class="flex px-4 py-3 justify-between items-center">
+            <h1 class="text-xl font-medium">Top Selection</h1>
+            <a href="#" class="bg-primary text-xs font-medium text-white px-5 py-2.5 rounded-sm shadow-lg">VIEW ALL</a>
+        </div>
+        <hr>
+        <!-- header -->
+        
+        <!-- products container -->
+        <div class="flex items-center justify-between owl-carousel owl-theme relative">
+
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+        </div>
+        <!-- products container -->
+    </section>
+
+    <section id="topSelection" class="bg-white w-full h-80 shadow overflow-hidden">
+        <!-- header -->
+        <div class="flex px-4 py-3 justify-between items-center">
+            <h1 class="text-xl font-medium">Top Selection</h1>
+            <a href="#" class="bg-primary text-xs font-medium text-white px-5 py-2.5 rounded-sm shadow-lg">VIEW ALL</a>
+        </div>
+        <hr>
+        <!-- header -->
+        
+        <!-- products container -->
+        <div class="flex items-center justify-between owl-carousel owl-theme relative">
+
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+        </div>
+        <!-- products container -->
+    </section>
+
+    <section id="topSelection" class="bg-white w-full h-80 shadow overflow-hidden">
+        <!-- header -->
+        <div class="flex px-4 py-3 justify-between items-center">
+            <h1 class="text-xl font-medium">Top Selection</h1>
+            <a href="#" class="bg-primary text-xs font-medium text-white px-5 py-2.5 rounded-sm shadow-lg">VIEW ALL</a>
+        </div>
+        <hr>
+        <!-- header -->
+        
+        <!-- products container -->
+        <div class="flex items-center justify-between owl-carousel owl-theme relative">
+
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ki3gknk0-0/backpack/t/n/i/spacy-unisex-backpack-with-rain-cover-and-reflective-strip-p-041-original-imafxyypsycttkeb.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kitchen Appliances</h2>
+                <span class="text-green-600 text-sm">Grab Now</span>
+            </a>
+        </div>
+        <!-- products container -->
+    </section>
+
+
+    <section class="bg-green-200 w-full h-72 shadow">
+        
+    </section>
+
+    <section class="bg-purple-300 w-full h-72 shadow">
+        
+    </section>
+
+
+
+    </main>
    
     <!-- main sections starts -->
 
