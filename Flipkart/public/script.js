@@ -16,7 +16,43 @@ $(document).ready(function() {
         nav: true,
         navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
         dots: false,
-        items: 7,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+            },
+            600:{
+                items:3,
+            },
+            768:{
+                items:4,
+            },
+            1000:{
+                items:7,
+            }
+        }
+    });
+
+    $('#recommended .owl-carousel').owlCarousel({
+        loop: false,
+        nav: true,
+        navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+        dots: false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+            },
+            600:{
+                items:3,
+            },
+            768:{
+                items:4,
+            },
+            1000:{
+                items:6,
+            }
+        }
     });
 
 });

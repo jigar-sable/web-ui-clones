@@ -28,6 +28,7 @@ module.exports = {
       pink: colors.pink,
       // custom colors
       primary: '#2874f0',
+      primaryGreen: '#388e3c',
     },
     spacing: {
       px: '1px',
