@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="./assets/style.css">
+<style>
+ .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+ .owl-carousel .owl-nav button.owl-prev {
+  left: 2.5rem;
+}
+ .owl-carousel .owl-nav button.owl-prev i,
+ .owl-carousel .owl-nav button.owl-next i {
+  font-size: 1.7rem;
+  color: #000;
+  margin-left: -3.5rem;
+  padding: 2.5rem 1rem;
+  padding-left: 1.5rem;
+  box-shadow: 0 8px 10px rgba(0,0,0,.2);
+  background: #fff;
+  border-radius: 5px;
+}
+ .owl-carousel .owl-nav button.owl-next {
+  right: 2rem;
+}
+ .owl-carousel .owl-nav button.owl-next i {
+    margin-right: -5.5rem;
+    padding: 2.5rem 1.5rem;
+    padding-left: 1rem;
+}
+</style>
 </head>
-<body>
+<body class="bg-gray-100">
 
     <!-- header starts -->
     <header class="bg-primary fixed top-0 py-2.5 w-full">
@@ -65,7 +101,7 @@
 
 
     <!-- categories container header -->
-    <section class="bg-white w-full px-12 py-1.5 mt-10 mb-2 shadow">
+    <section class="bg-white w-full px-12 py-1.5 mt-10 shadow overflow-hidden">
 
         <!-- categories container -->
         <div class="flex items-center justify-between mt-3">
@@ -154,9 +190,32 @@
     </section>
     <!-- categories container header -->
 
+    <!-- main sections starts -->
+    <div class="flex flex-col gap-2 px-2 mt-2">
+
+    <!-- banner section -->
+    <div class="h-72 w-full bg-green-300 rounded-sm shadow owl-carousel owl-theme relative overflow-hidden">
+        <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
+        <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
+        <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
+        <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
+        <img class="h-72 w-full object-cover" src="https://rukminim1.flixcart.com/flap/1688/280/image/9d50c7626a973408.jpg" alt="">
+    </div>
+    <!-- banner section -->
+
+    </div>
+   
+    <!-- main sections starts -->
 
 
- <!-- logo  -->
-    <!-- <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fk-plus_3b0baa.png" alt=""> -->
+
+        <!-- jquery cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!-- owl carousel cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+        <!-- custom js -->
+        <script src="./script.js"></script>
 </body>
 </html>
