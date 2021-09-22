@@ -16,6 +16,8 @@ $(document).ready(function() {
         nav: true,
         navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
         dots: false,
+        mouseDrag: false,
+        touchDrag: false,
         responsiveClass:true,
         responsive:{
             0:{
@@ -38,6 +40,8 @@ $(document).ready(function() {
         nav: true,
         navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
         dots: false,
+        mouseDrag: false,
+        touchDrag: false,
         responsiveClass:true,
         responsive:{
             0:{
