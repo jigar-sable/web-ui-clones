@@ -83,13 +83,14 @@ $(document).ready(function() {
     $('.userDropDownMenu').hover(function(){
         $(this).addClass('active');
     }, function() {
-        $('.userDropDownMenu').toggleClass('active');
+        $(this).toggleClass('active');
     });
 
     $('.moreDropDownMenu').hover(function(){
         $(this).addClass('active');
     }, function() {
-        $('.moreDropDownMenu').toggleClass('active');
+        $(this).toggleClass('active');
     });
+    // dropdown hovers
 
 });
