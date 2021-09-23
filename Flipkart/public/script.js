@@ -93,9 +93,6 @@ $(document).ready(function() {
     });
     // dropdown hovers
 
-
-
-
     // js-image-zoom effect
     // var zoom_img = document.querySelector('.zoomimg');
     // var options = {
