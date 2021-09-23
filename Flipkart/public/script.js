@@ -93,4 +93,21 @@ $(document).ready(function() {
     });
     // dropdown hovers
 
+
+
+
+    // js-image-zoom effect
+    // var zoom_img = document.querySelector('.zoomimg');
+    // var options = {
+    //     width: 300,
+    //     zoomWidth: 600,
+    //     // scale: 0.5,
+    //     // zoomStyle: 'height:500px;width:12000px;border-radius:2px;',
+    //     // zoomLensStyle: 'opacity: 0.3;height: 10px;width: 20px;background-color: black;',
+    //     offset: {vertical: 20, horizontal: 30}
+    //     // zoomPosition: 'right',
+    //     // zoomContainer: document.querySelector('.zoomimg')
+    // };
+    // new ImageZoom(document.querySelector('.image-box'), options);
+
 });

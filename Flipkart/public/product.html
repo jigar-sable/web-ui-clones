@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- owl carousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./assets/style.css">
+<style>
+ .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+ #topSelection .owl-carousel .owl-nav button {
+     top: 20%;
+ }
+ #recommended .owl-carousel .owl-nav button {
+     top: 25%;
+ }
+ .owl-carousel .owl-nav button.owl-prev {
+  left: 2.5rem;
+}
+ .owl-carousel .owl-nav button.owl-prev i,
+ .owl-carousel .owl-nav button.owl-next i {
+  font-size: 1.7rem;
+  color: #000;
+  margin-left: -3.5rem;
+  padding: 2.5rem 1rem;
+  padding-left: 1.5rem;
+  box-shadow: 0 8px 12px rgba(0,0,0,.2);
+  background: #fff;
+  border-radius: 5px;
+}
+ .owl-carousel .owl-nav button.owl-next {
+  right: 2rem;
+}
+ .owl-carousel .owl-nav button.owl-next i {
+    margin-right: -5.5rem;
+    padding: 2.5rem 1.5rem;
+    padding-left: 1rem;
+}
+ .owl-next.disabled, .owl-prev.disabled {
+    display: none !important;
+}
+
+.md-16 {
+    font-size: 16px;
+}
+.md-18 {
+    font-size: 18px;
+}
+.md-20 {
+    font-size: 20px;
+}
+.md-22 {
+    font-size: 22px;
+}
+
+
+.arrow_down {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #fff;
+}
+
+.active {
+    display: flex;
+}
+</style>
+
+</head>
+<body class="bg-gray-100">
+    
+
+    <!-- header starts -->
+    <header class="bg-primary sticky top-0 py-2.5 w-full z-10">
+
+        <!-- navbar container -->
+        <div class="w-9/12 m-auto flex justify-between items-center relative">
+
+            <!-- logo & search container -->
+            <div class="flex items-center flex-1">
+            <div class="h-7 mr-4">
+                <img class="h-full w-full object-contain" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fk-plus_3b0baa.png" alt="">
+            </div>
+
+            <!-- search container -->
+            <div class="w-9/12 px-4 py-1.5 flex justify-between items-center shadow-md bg-white rounded-sm">
+                <input class="text-sm flex-1 outline-none border-none" type="text" placeholder="Search for products, brands and more">
+                <span class="material-icons text-primary">search</span>
+            </div>
+            <!-- search container -->
+            </div>
+            <!-- logo & search container -->
+
+            <!-- right navs -->
+            <div class="flex items-center justify-between gap-7 relative">
+                <a href="#" class="userDropDown flex items-center text-white font-medium gap-1">Jigar
+                    <span class="material-icons text-sm">expand_more</span>
+                </a>
+
+               <!-- dropdown navbar hover tabs -->
+               <div class="userDropDownMenu hidden absolute w-60 -left-24 ml-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100 rounded-t" href="#">
+                        <span class="material-icons md-18 text-primary">account_circle</span>
+                        My Profile
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">offline_bolt</span>
+                        Supercoin Zone
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">add_circle</span>
+                        Flipkart Plus Zone
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">shopping_bag</span>
+                        Orders
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">favorite</span>
+                        Wishlist
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">chat</span>
+                        My Chats
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">redeem</span>
+                        Coupons
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">account_balance_wallet</span>
+                        Gift Cards
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">notifications</span>
+                        Notifications
+                   </a>
+                   <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-100 rounded-b" href="#">
+                        <span class="material-icons md-18 text-primary">power_settings_new</span>
+                        Logout
+                   </a>
+                   <div class="absolute right-1/2 -top-2.5">
+                        <div class="arrow_down"></div>
+                   </div>
+               </div>
+               <!-- dropdown navbar hover tabs -->
+
+                <a href="#" class="moreDropDown flex items-center text-white font-medium gap-1">More
+                    <span class="material-icons text-sm">expand_more</span>
+                </a>
+                <!-- dropdown navbar hover tabs -->
+                <div class="moreDropDownMenu hidden absolute w-60 -right-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100 rounded-t" href="#">
+                     <span class="material-icons md-18 text-primary">notifications</span>
+                     Notification Preferences
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">business_center</span>
+                     Sell on Flipkart
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">live_help</span>
+                     24x7 Customer Care
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">trending_up</span>
+                     Advertise
+                </a>
+                <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-100 rounded-b" href="#">
+                     <span class="material-icons md-18 text-primary">download</span>
+                     Download App
+                </a>
+                <div class="absolute right-1/2 -top-2.5">
+                     <div class="arrow_down"></div>
+                </div>
+                </div>
+                <!-- dropdown navbar hover tabs -->
+
+                <a href="#" class="flex items-center text-white font-medium gap-2 relative">
+                    <span class="material-icons">shopping_cart</span>
+                    <!-- badge count -->
+                    <div class="w-5 h-5 p-2 bg-red-500 text-xs rounded-full absolute -top-2 left-3 flex justify-center items-center">
+                        1
+                    </div>
+                    <!-- badge count -->
+                    Cart
+                </a>
+            </div>
+            <!-- right navs -->
+
+        </div>
+        <!-- navbar container -->
+    </header>
+    <!-- header ends -->
+
+
+    <!-- categories container header -->
+    <section class="bg-white w-full px-12 py-1.5 shadow overflow-hidden border-b">
+
+        <!-- categories container -->
+        <div class="flex items-center justify-between mt-3">
+            
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Top Offers</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Grocery</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Mobiles</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Fashion</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Electronics</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Home</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Appliances</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Travel</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Beauty, Toys & More</span>
+        </a>
+        <!-- category -->
+        </div>
+    </section>
+    <!-- categories container header -->
+
+    <!-- main sections starts -->
+    <main>
+    
+    <!-- product image & description container -->
+    <div class="w-full flex bg-white p-2 relative">
+
+        <!-- image wrapper -->
+        <div class="w-2/5 sticky top-16 h-screen">
+            <!-- imgbox -->
+            <div class="flex flex-col gap-3 m-3">
+                <div class="image-box w-full h-96 p-4 border">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/416/416/kfpq5jk0-0/headphone/c/n/6/rockerz-400-rockerz-410-boat-original-imafw45vhyrax3zj.jpeg" alt="">
+                </div>
+
+                <div class="w-full flex gap-3">
+                    <!-- add to cart btn -->
+                    <button class="p-4 w-1/2 flex items-center justify-center gap-2 text-white bg-yellow-500 rounded-sm shadow" type="submit">
+                        <span class="material-icons">shopping_cart</span>
+                        ADD TO CART
+                    </button>
+                    <button class="p-4 w-1/2 flex items-center justify-center gap-2 text-white bg-red-500 rounded-sm shadow" type="submit">
+                        <span class="material-icons">flash_on</span>
+                        BUY NOW
+                    </button>
+                    <!-- add to cart btn -->
+                </div>
+
+            </div>
+            <!-- imgbox -->
+        </div>
+        <!-- image wrapper -->
+
+        <!-- product desc wrapper -->
+        <div class="flex flex-col flex-1">
+        <div class="bg-red-300 h-screen"></div>
+        <div class="bg-yellow-300 h-screen"></div>
+        <div class="bg-yellow-300 h-screen"></div>
+        </div>
+        <!-- product desc wrapper -->
+
+        </div>
+    </div>
+    <!-- product image & description container -->
+
+    <div class="flex flex-col gap-3 px-2 mt-2">
+    <!-- you may like section -->
+    <section id="recommended" class="bg-white w-full shadow overflow-hidden">
+        <!-- header -->
+        <div class="flex px-6 py-4 justify-between items-center">
+            <div class="title flex flex-col gap-0.5">
+                <h1 class="text-xl font-medium">You May Like...</h1>
+                <p class="text-sm text-gray-400">Based on Your Interest</p>
+            </div>
+            <a href="#" class="bg-primary text-xs font-medium text-white px-5 py-2.5 rounded-sm shadow-lg">VIEW ALL</a>
+        </div>
+        <hr>
+        <!-- header -->
+        
+        <!-- products container -->
+        <div class="flex items-center justify-between owl-carousel owl-theme p-1 relative">
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+            <!-- one product -->
+            <div class="flex flex-col items-center gap-2 px-2 py-6 relative">
+                <!-- image & product title -->
+                <a href="#" class="flex flex-col items-center text-center group">
+                <div class="w-36 h-36">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kh0vonk0/sauce-ketchup/h/b/z/450-tomato-pouch-ketchup-surabhi-original-imafx4qktzguhhwy.jpeg" alt="">
+                </div>
+                <h2 class="text-sm mt-4 group-hover:text-primary">SAMSUNG 230 L Direct Cool Single Door 3 Star Refrigerator</h2>
+                </a>
+                <!-- image & product title -->
+
+                <!-- product description -->
+                <div class="flex flex-col gap-2 items-center">
+                        <!-- rating badge -->
+                        <p class="text-sm text-gray-500 font-medium">
+                            <span class="text-xs px-1.5 py-1 bg-primaryGreen rounded-sm text-white">4.3 <i class="fas fa-star fa-xs"></i></span>&nbsp; (7,345)
+                        </p>
+                        <!-- rating badge -->
+
+                        <!-- price container -->
+                        <div class="flex items-center gap-1.5 text-md font-medium">
+                            <span>₹16,790</span>
+                            <span class="text-gray-500 line-through text-xs">₹18,890</span>
+                            <span class="text-xs text-primaryGreen">15%&nbsp;off</span>
+                        </div>
+                        <!-- price container -->
+                </div>
+                <!-- product description -->
+
+                <!-- wishlist badge -->
+                <i class="fas fa-heart absolute top-5 right-2 text-gray-300 text-sm cursor-pointer hover:text-red-500"></i>
+                <!-- wishlist badge -->
+
+            </div>
+
+        </div>
+        <!-- products container -->
+    </section>
+    <!-- you may like section -->
+
+    <!-- top rated section -->
+    <section id="topSelection" class="bg-white w-full shadow overflow-hidden">
+        <!-- header -->
+        <div class="flex px-6 py-3 justify-between items-center">
+            <h1 class="text-xl font-medium">Top Rated</h1>
+            <a href="#" class="bg-primary text-xs font-medium text-white px-5 py-2.5 rounded-sm shadow-lg">VIEW ALL</a>
+        </div>
+        <hr>
+        <!-- header -->
+        
+        <!-- products container -->
+        <div class="flex items-center justify-between owl-carousel owl-theme relative">
+
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="#">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="https://rukminim1.flixcart.com/image/150/150/ksdjma80/headphone/a/u/p/airdopes-131-airdopes-138-boat-original-imag5yz9sfz9bzq8.jpeg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Audio & Video</h2>
+                <span class="text-primaryGreen text-sm">New Collection</span>
+            </a>
+
+        </div>
+        <!-- products container -->
+    </section>
+    <!-- top rated section -->
+    </div>
+
+    </main>
+    <!-- main sections starts -->
+
+
+    <!-- long desc links -->
+    <div class="w-full bg-white p-6 flex flex-col mt-10 border-t text-gray-500 text-sm">
+        <h3 class="font-medium mb-3">Top Stories: <span class="text-gray-700">Brand Directory</span></h3>
+
+        <p class="">MOST SEARCHED FOR ON FLIPKART:
+            <span class="text-xs text-gray-700">
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a>
+            </span>
+        </p>
+
+        <p>LARGE APPLIANCES:
+            <span class="text-xs text-gray-700">
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+           </span>
+        </p>
+
+        <p>BEST SELLING ON FLIPKART:
+            <span class="text-xs text-gray-700">
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+                <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> | <a href="#">Ray Ban Sunglasses</a> |
+            </span>
+        </p>
+    </div>
+    <!-- long desc links -->
+
+
+    <!-- footer starts -->
+    <footer class="w-full py-4 px-12 bg-gray-800 text-white text-xs border-b border-gray-500 flex">
+        <div class="w-7/12 flex">
+        <!-- about column -->
+        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
+            <h2 class="text-gray-400 mb-2">ABOUT</h2>
+            <!-- links -->
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Flipkart Stories</a>
+            <a href="#">Press</a>
+            <a href="#">Flipkart Wholesale</a>
+            <a href="#">Corporate Information</a>
+            <!-- links -->
+        </div>
+        <!-- about column -->
+
+        <!-- help column -->
+        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
+            <h2 class="text-gray-400 mb-2">HELP</h2>
+            <!-- links -->
+            <a href="#">Payments</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellation & Returns</a>
+            <a href="#">FAQ</a>
+            <a href="#">Report Infringement</a>
+            <!-- links -->
+        </div>
+        <!-- help column -->
+
+        <!-- policy column -->
+        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
+            <h2 class="text-gray-400 mb-2">POLICY</h2>
+            <!-- links -->
+            <a href="#">Return Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Security</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+            <a href="#">EPR Compliance</a>
+            <!-- links -->
+        </div>
+        <!-- policy column -->
+
+        <!-- socials column -->
+        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
+            <h2 class="text-gray-400 mb-2">SOCIAL</h2>
+            <!-- links -->
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+            <!-- links -->
+        </div>
+        <!-- socials column -->
+        </div>
+
+
+        <div class="border-gray-700 h-36 w-1 border-l mr-5 mt-6"></div>
+        <div class="w-5/12 my-6 flex justify-between">
+            <div class="w-1/2">
+                <h2 class="text-gray-400">Mail Us:</h2>
+                <p class="mt-2 leading-5">Flipkart Internet Private Limited,<br>
+                    Buildings Alyssa, Begonia &<br>                  
+                    Clove Embassy Tech Village,<br>           
+                    Outer Ring Road, Devarabeesanahalli Village,<br>             
+                    Bengaluru, 560103,<br>
+                    Karnataka, India
+                </p>
+            </div>
+
+            <div class="w-1/2">
+                <h2 class="text-gray-400">Registered Office Address:</h2>
+                <p class="mt-2 leading-5">Flipkart Internet Private Limited,<br>
+                    Buildings Alyssa, Begonia &<br>                   
+                    Clove Embassy Tech Village,<br>                   
+                    Outer Ring Road, Devarabeesanahalli Village,<br>                  
+                    Bengaluru, 560103,<br>                  
+                    Karnataka, India <br>               
+                    CIN : U51109KA2012PTC066107<br>                
+                    Telephone: <a class="text-primary" href="tel:18002029898">1800 202 9898</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer ends -->
+
+    <div class="px-16 py-6 w-full bg-gray-800 flex justify-between items-center text-sm text-white">
+        <a href="#">
+           <i class="fas fa-briefcase text-yellow-400"></i>&nbsp;&nbsp; Sell On Flipkart
+        </a>
+        <a href="#">
+            <i class="fas fa-star text-yellow-400"></i>&nbsp;&nbsp; Advertise
+            <!-- <i class="fas fa-star text-gray-800 bg-yellow-400 w-5 h-5 text-xs text-center p-0.5 rounded-full"></i>&nbsp;&nbsp; Advertise -->
+         </a>
+         <a href="#">
+            <i class="fas fa-gift text-yellow-400"></i>&nbsp;&nbsp; Gift Cards
+         </a>
+         <a href="#">
+            <i class="fas fa-question-circle text-yellow-400"></i>&nbsp;&nbsp; Help Center
+         </a>
+
+         <div class="">
+            &copy; 2007-2021 Flipkart.com
+         </div>
+         <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
+    </div>
+
+        <!-- jquery cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!-- owl carousel cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+        <!-- js-image-zoom cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+
+        <!-- custom js -->
+        <script src="./script.js"></script>
+</body>
+</html>
