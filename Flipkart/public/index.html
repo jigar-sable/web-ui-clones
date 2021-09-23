@@ -7,6 +7,8 @@
     <title>Flipkart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- owl carousel cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -50,6 +52,26 @@
  .owl-next.disabled, .owl-prev.disabled {
     display: none !important;
 }
+
+.md-16 {
+    font-size: 16px;
+}
+.md-18 {
+    font-size: 18px;
+}
+.md-20 {
+    font-size: 20px;
+}
+.md-22 {
+    font-size: 22px;
+}
+
+
+.arrow_down {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #fff;
+}
 </style>
 </head>
 <body class="bg-gray-100">
@@ -69,9 +91,7 @@
             <!-- search container -->
             <div class="w-9/12 px-4 py-2 flex justify-between items-center shadow-md bg-white rounded-sm">
                 <input class="text-sm flex-1 outline-none border-none" type="text" placeholder="Search for products, brands and more">
-                <svg class="h-5 w-5 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+                <span class="material-icons text-primary">search</span>
             </div>
             <!-- search container -->
             </div>
@@ -80,37 +100,90 @@
             <!-- right navs -->
             <div class="flex items-center justify-between gap-7 relative">
                 <a href="#" class="flex items-center text-white font-medium gap-1">Jigar
-                    <svg class="h-3 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
+                    <span class="material-icons text-sm">expand_more</span>
                 </a>
 
-                <!-- dropdown navbar hover tabs -->
-               <div class="absolute w-52 -left-16 top-9 bg-white shadow-2xl rounded flex flex-col text-sm">
-                   <a class="p-3 border-b" href="#">My Profile</a>
-                   <a class="p-3 border-b" href="#">My Profile</a>
-                   <a class="p-3 border-b" href="#">My Profile</a>
-                   <a class="p-3 border-b" href="#">My Profile</a>
-                   <a class="p-3 border-b" href="#">My Profile</a>
-                   <a class="p-3 border-b" href="#">My Profile</a>
+               <!-- dropdown navbar hover tabs -->
+               <div class="absolute hidden w-60 -left-20 top-10 bg-white shadow-2xl rounded flex flex-col text-sm">
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">account_circle</span>
+                        My Profile
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">offline_bolt</span>
+                        Supercoin Zone
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">add_circle</span>
+                        Flipkart Plus Zone
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">shopping_bag</span>
+                        Orders
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">favorite</span>
+                        Wishlist
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">chat</span>
+                        My Chats
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">redeem</span>
+                        Coupons
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">account_balance_wallet</span>
+                        Gift Cards
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">notifications</span>
+                        Notifications
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">power_settings_new</span>
+                        Logout
+                   </a>
+                   <div class="absolute right-1/2 -top-2.5">
+                        <div class="arrow_down"></div>
+                   </div>
                </div>
                <!-- dropdown navbar hover tabs -->
 
                 <a href="#" class="flex items-center text-white font-medium gap-1">More
-                    <svg class="h-3 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
+                    <span class="material-icons text-sm">expand_more</span>
                 </a>
                 <!-- dropdown navbar hover tabs -->
-                <!-- <div class="absolute w-32 h-40 right-0 top-9 bg-white shadow-lg rounded">
-                    
-                </div> -->
+                <div class="absolute w-60 -right-2 top-10 bg-white shadow-2xl rounded flex flex-col text-sm">
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">notifications</span>
+                     Notification Preferences
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">business_center</span>
+                     Sell on Flipkart
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">live_help</span>
+                     24x7 Customer Care
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">trending_up</span>
+                     Advertise
+                </a>
+                <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">download</span>
+                     Download App
+                </a>
+                <div class="absolute right-1/2 -top-2.5">
+                     <div class="arrow_down"></div>
+                </div>
+                </div>
                 <!-- dropdown navbar hover tabs -->
 
                 <a href="#" class="flex items-center text-white font-medium gap-2 relative">
-                    <svg class="h-5 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                    </svg>
+                    <span class="material-icons">shopping_cart</span>
                     <!-- badge count -->
                     <div class="w-5 h-5 p-2 bg-red-500 text-xs rounded-full absolute -top-2 left-3 flex justify-center items-center">
                         1
