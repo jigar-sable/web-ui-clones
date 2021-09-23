@@ -72,9 +72,15 @@
   border-right: 11px solid transparent;
   border-bottom: 11px solid #fff;
 }
+
+.active {
+    display: flex;
+}
 </style>
+
 </head>
 <body class="bg-gray-100">
+    
 
     <!-- header starts -->
     <header class="bg-primary fixed top-0 py-2.5 w-full z-10">
@@ -99,12 +105,12 @@
 
             <!-- right navs -->
             <div class="flex items-center justify-between gap-7 relative">
-                <a href="#" class="flex items-center text-white font-medium gap-1">Jigar
+                <a href="#" class="userDropDown flex items-center text-white font-medium gap-1">Jigar
                     <span class="material-icons text-sm">expand_more</span>
                 </a>
 
                <!-- dropdown navbar hover tabs -->
-               <div class="absolute hidden w-60 -left-20 top-10 bg-white shadow-2xl rounded flex flex-col text-sm">
+               <div class="userDropDownMenu hidden absolute w-60 -left-24 ml-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
                    <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
                         <span class="material-icons md-18 text-primary">account_circle</span>
                         My Profile
@@ -151,11 +157,11 @@
                </div>
                <!-- dropdown navbar hover tabs -->
 
-                <a href="#" class="flex items-center text-white font-medium gap-1">More
+                <a href="#" class="moreDropDown flex items-center text-white font-medium gap-1">More
                     <span class="material-icons text-sm">expand_more</span>
                 </a>
                 <!-- dropdown navbar hover tabs -->
-                <div class="absolute w-60 -right-2 top-10 bg-white shadow-2xl rounded flex flex-col text-sm">
+                <div class="moreDropDownMenu hidden absolute w-60 -right-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
                 <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
                      <span class="material-icons md-18 text-primary">notifications</span>
                      Notification Preferences
@@ -1806,8 +1812,6 @@
          </div>
          <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
     </div>
-
-
 
         <!-- jquery cdn -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

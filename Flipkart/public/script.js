@@ -67,4 +67,29 @@ $(document).ready(function() {
         }
     });
 
+    // dropdown hovers
+    $('.userDropDown').hover(function(){
+        $('.userDropDownMenu').toggleClass('active');
+    }, function() {
+        $('.userDropDownMenu').toggleClass('active');
+    });
+
+    $('.moreDropDown').hover(function(){
+        $('.moreDropDownMenu').toggleClass('active');
+    }, function() {
+        $('.moreDropDownMenu').toggleClass('active');
+    });
+
+    $('.userDropDownMenu').hover(function(){
+        $(this).addClass('active');
+    }, function() {
+        $('.userDropDownMenu').toggleClass('active');
+    });
+
+    $('.moreDropDownMenu').hover(function(){
+        $(this).addClass('active');
+    }, function() {
+        $('.moreDropDownMenu').toggleClass('active');
+    });
+
 });
