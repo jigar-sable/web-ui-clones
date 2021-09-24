@@ -51,12 +51,15 @@ body {
 /* material icons sizing */
 .md-16 {
     font-size: 16px;
+    transform: rotate(0.03deg);
 }
 .md-18 {
     font-size: 18px;
+    transform: rotate(0.03deg);
 }
 .md-20 {
     font-size: 20px;
+    transform: rotate(0.03deg);
 }
 .md-22 {
     font-size: 22px;

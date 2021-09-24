@@ -34,6 +34,7 @@ module.exports = {
         yellow: '#ff9f00',
         orange: '#fb641b',
         darkBlue: '#172337',
+        grey: '#878787',
       },
     },
     spacing: {
