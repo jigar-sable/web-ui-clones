@@ -5,205 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipkart</title>
+    <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- material icons cdn -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- owl carousel cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <!-- custom build css -->
     <link rel="stylesheet" href="./assets/style.css">
-<style>
- .owl-carousel .owl-nav button {
-  position: absolute;
-  top: 30%;
-  outline: none;
-}
- #topSelection .owl-carousel .owl-nav button {
-     top: 20%;
- }
- #recommended .owl-carousel .owl-nav button {
-     top: 25%;
- }
- .owl-carousel .owl-nav button.owl-prev {
-  left: 2.5rem;
-}
- .owl-carousel .owl-nav button.owl-prev i,
- .owl-carousel .owl-nav button.owl-next i {
-  font-size: 1.7rem;
-  color: #000;
-  margin-left: -3.5rem;
-  padding: 2.5rem 1rem;
-  padding-left: 1.5rem;
-  box-shadow: 0 8px 12px rgba(0,0,0,.2);
-  background: #fff;
-  border-radius: 5px;
-}
- .owl-carousel .owl-nav button.owl-next {
-  right: 2rem;
-}
- .owl-carousel .owl-nav button.owl-next i {
-    margin-right: -5.5rem;
-    padding: 2.5rem 1.5rem;
-    padding-left: 1rem;
-}
- .owl-next.disabled, .owl-prev.disabled {
-    display: none !important;
-}
-
-.md-16 {
-    font-size: 16px;
-}
-.md-18 {
-    font-size: 18px;
-}
-.md-20 {
-    font-size: 20px;
-}
-.md-22 {
-    font-size: 22px;
-}
-
-
-.arrow_down {
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  border-bottom: 11px solid #fff;
-}
-
-.active {
-    display: flex;
-}
-</style>
-
 </head>
 <body class="bg-gray-100">
     
 
-    <!-- header starts -->
-    <header class="bg-primary sticky top-0 py-2.5 w-full z-10">
+<!-- header starts -->
+<header class="bg-primary-blue sticky top-0 py-2.5 w-full z-10">
 
-        <!-- navbar container -->
-        <div class="w-9/12 m-auto flex justify-between items-center relative">
+    <!-- navbar container -->
+    <div class="w-full sm:w-9/12 px-4 m-auto flex justify-between items-center relative">
 
-            <!-- logo & search container -->
-            <div class="flex items-center flex-1">
-            <div class="h-7 mr-4">
-                <img class="h-full w-full object-contain" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fk-plus_3b0baa.png" alt="">
-            </div>
-
-            <!-- search container -->
-            <div class="w-9/12 px-4 py-1.5 flex justify-between items-center shadow-md bg-white rounded-sm">
-                <input class="text-sm flex-1 outline-none border-none" type="text" placeholder="Search for products, brands and more">
-                <span class="material-icons text-primary">search</span>
-            </div>
-            <!-- search container -->
-            </div>
-            <!-- logo & search container -->
-
-            <!-- right navs -->
-            <div class="flex items-center justify-between gap-7 relative">
-                <a href="#" class="userDropDown flex items-center text-white font-medium gap-1">Jigar
-                    <span class="material-icons text-sm">expand_more</span>
-                </a>
-
-               <!-- dropdown navbar hover tabs -->
-               <div class="userDropDownMenu hidden absolute w-60 -left-24 ml-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100 rounded-t" href="#">
-                        <span class="material-icons md-18 text-primary">account_circle</span>
-                        My Profile
-                   </a>
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                        <span class="material-icons md-18 text-primary">offline_bolt</span>
-                        Supercoin Zone
-                   </a>
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                        <span class="material-icons md-18 text-primary">add_circle</span>
-                        Flipkart Plus Zone
-                   </a>
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                        <span class="material-icons md-18 text-primary">shopping_bag</span>
-                        Orders
-                   </a>
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                        <span class="material-icons md-18 text-primary">favorite</span>
-                        Wishlist
-                   </a>
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                        <span class="material-icons md-18 text-primary">chat</span>
-                        My Chats
-                   </a>
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                        <span class="material-icons md-18 text-primary">redeem</span>
-                        Coupons
-                   </a>
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                        <span class="material-icons md-18 text-primary">account_balance_wallet</span>
-                        Gift Cards
-                   </a>
-                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                        <span class="material-icons md-18 text-primary">notifications</span>
-                        Notifications
-                   </a>
-                   <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-100 rounded-b" href="#">
-                        <span class="material-icons md-18 text-primary">power_settings_new</span>
-                        Logout
-                   </a>
-                   <div class="absolute right-1/2 -top-2.5">
-                        <div class="arrow_down"></div>
-                   </div>
-               </div>
-               <!-- dropdown navbar hover tabs -->
-
-                <a href="#" class="moreDropDown flex items-center text-white font-medium gap-1">More
-                    <span class="material-icons text-sm">expand_more</span>
-                </a>
-                <!-- dropdown navbar hover tabs -->
-                <div class="moreDropDownMenu hidden absolute w-60 -right-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
-                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100 rounded-t" href="#">
-                     <span class="material-icons md-18 text-primary">notifications</span>
-                     Notification Preferences
-                </a>
-                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                     <span class="material-icons md-18 text-primary">business_center</span>
-                     Sell on Flipkart
-                </a>
-                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                     <span class="material-icons md-18 text-primary">live_help</span>
-                     24x7 Customer Care
-                </a>
-                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
-                     <span class="material-icons md-18 text-primary">trending_up</span>
-                     Advertise
-                </a>
-                <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-100 rounded-b" href="#">
-                     <span class="material-icons md-18 text-primary">download</span>
-                     Download App
-                </a>
-                <div class="absolute right-1/2 -top-2.5">
-                     <div class="arrow_down"></div>
-                </div>
-                </div>
-                <!-- dropdown navbar hover tabs -->
-
-                <a href="#" class="flex items-center text-white font-medium gap-2 relative">
-                    <span class="material-icons">shopping_cart</span>
-                    <!-- badge count -->
-                    <div class="w-5 h-5 p-2 bg-red-500 text-xs rounded-full absolute -top-2 left-3 flex justify-center items-center">
-                        1
-                    </div>
-                    <!-- badge count -->
-                    Cart
-                </a>
-            </div>
-            <!-- right navs -->
-
+        <!-- logo & search container -->
+        <div class="flex items-center flex-1">
+        <div class="h-7 mr-4">
+            <img class="h-full w-full object-contain" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fk-plus_3b0baa.png" alt="">
         </div>
-        <!-- navbar container -->
-    </header>
-    <!-- header ends -->
+
+        <!-- search container -->
+        <div class="w-9/12 px-4 py-1.5 hidden sm:flex justify-between items-center shadow-md bg-white rounded-sm">
+            <input class="text-sm flex-1 outline-none border-none" type="text" placeholder="Search for products, brands and more">
+            <span class="material-icons text-primary-blue">search</span>
+        </div>
+        <!-- search container -->
+        </div>
+        <!-- logo & search container -->
+
+        <!-- right navs -->
+        <div class="flex items-center justify-between gap-7 relative">
+            <span class="userDropDown flex items-center text-white font-medium gap-1 cursor-pointer">Jigar
+                <span class="material-icons text-sm">expand_more</span>
+            </span>
+
+           <!-- dropdown navbar hover tabs -->
+           <div class="userDropDownMenu hidden absolute w-60 -left-24 ml-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50 rounded-t" href="profile.html">
+                    <span class="material-icons md-18 text-primary-blue">account_circle</span>
+                    My Profile
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="#">
+                    <span class="material-icons md-18 text-primary-blue">offline_bolt</span>
+                    Supercoin Zone
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="https://www.flipkart.com/plus/all-offers">
+                    <span class="material-icons md-18 text-primary-blue">add_circle</span>
+                    Flipkart Plus Zone
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="orders.html">
+                    <span class="material-icons md-18 text-primary-blue">shopping_bag</span>
+                    Orders
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="wishlist.html">
+                    <span class="material-icons md-18 text-primary-blue">favorite</span>
+                    Wishlist
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="#">
+                    <span class="material-icons md-18 text-primary-blue">chat</span>
+                    My Chats
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="https://www.flipkart.com/account/rewards">
+                    <span class="material-icons md-18 text-primary-blue">redeem</span>
+                    Coupons
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="#">
+                    <span class="material-icons md-18 text-primary-blue">account_balance_wallet</span>
+                    Gift Cards
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="#">
+                    <span class="material-icons md-18 text-primary-blue">notifications</span>
+                    Notifications
+               </a>
+               <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-50 rounded-b" href="#">
+                    <span class="material-icons md-18 text-primary-blue">power_settings_new</span>
+                    Logout
+               </a>
+               <div class="absolute right-1/2 -top-2.5">
+                    <div class="arrow_down"></div>
+               </div>
+           </div>
+           <!-- dropdown navbar hover tabs -->
+
+            <span class="moreDropDown hidden sm:flex items-center text-white font-medium gap-1 cursor-pointer">More
+                <span class="material-icons text-sm">expand_more</span>
+            </span>
+
+            <!-- dropdown navbar hover tabs -->
+            <div class="moreDropDownMenu hidden absolute w-60 -right-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
+            <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50 rounded-t" href="https://www.flipkart.com/communication-preferences/push">
+                 <span class="material-icons md-18 text-primary-blue">notifications</span>
+                 Notification Preferences
+            </a>
+            <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="https://seller.flipkart.com/sell-online">
+                 <span class="material-icons md-18 text-primary-blue">business_center</span>
+                 Sell on Flipkart
+            </a>
+            <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="https://www.flipkart.com/helpcentre">
+                 <span class="material-icons md-18 text-primary-blue">live_help</span>
+                 24x7 Customer Care
+            </a>
+            <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="https://advertising.flipkart.com">
+                 <span class="material-icons md-18 text-primary-blue">trending_up</span>
+                 Advertise
+            </a>
+            <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-50 rounded-b" href="https://www.flipkart.com/mobile-apps">
+                 <span class="material-icons md-18 text-primary-blue">download</span>
+                 Download App
+            </a>
+            <div class="absolute right-1/2 -top-2.5">
+                 <div class="arrow_down"></div>
+            </div>
+            </div>
+            <!-- dropdown navbar hover tabs -->
+
+            <a href="#" class="flex items-center text-white font-medium gap-2 relative">
+                <span class="material-icons">shopping_cart</span>
+                <!-- badge count -->
+                <div class="w-5 h-5 p-2 bg-red-500 text-xs rounded-full absolute -top-2 left-3 flex justify-center items-center">
+                    1
+                </div>
+                <!-- badge count -->
+                Cart
+            </a>
+        </div>
+        <!-- right navs -->
+
+    </div>
+    <!-- navbar container -->
+</header>
+<!-- header ends -->
 
 
     <!-- categories container header -->
@@ -1018,67 +958,67 @@
 
 
     <!-- footer starts -->
-    <footer class="w-full py-4 px-12 bg-gray-800 text-white text-xs border-b border-gray-500 flex">
-        <div class="w-7/12 flex">
+    <footer class="w-full py-1 sm:py-4 px-4 sm:px-12 bg-primary-darkBlue text-white text-xs border-b border-gray-600 flex flex-col sm:flex-row overflow-hidden">
+        <div class="w-full sm:w-7/12 flex flex-col sm:flex-row">
         <!-- about column -->
-        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
-            <h2 class="text-gray-400 mb-2">ABOUT</h2>
+        <div class="w-full sm:w-1/5 flex flex-col gap-2 my-3 sm:my-6 ml-5">
+            <h2 class="text-primary-grey mb-2">ABOUT</h2>
             <!-- links -->
-            <a href="#">Contact Us</a>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Flipkart Stories</a>
-            <a href="#">Press</a>
-            <a href="#">Flipkart Wholesale</a>
-            <a href="#">Corporate Information</a>
+            <a href="https://www.flipkart.com/helpcentre" class="hover:underline">Contact Us</a>
+            <a href="https://www.flipkart.com/about-us" class="hover:underline">About Us</a>
+            <a href="https://www.flipkartcareers.com" class="hover:underline">Careers</a>
+            <a href="https://stories.flipkart.com" class="hover:underline">Flipkart Stories</a>
+            <a href="https://stories.flipkart.com/category/top-stories/news" class="hover:underline">Press</a>
+            <a href="https://www.flipkartwholesale.com" class="hover:underline">Flipkart Wholesale</a>
+            <a href="https://www.flipkart.com/corporate-information" class="hover:underline">Corporate Information</a>
             <!-- links -->
         </div>
         <!-- about column -->
 
         <!-- help column -->
-        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
-            <h2 class="text-gray-400 mb-2">HELP</h2>
+        <div class="w-full sm:w-1/5 flex flex-col gap-2 my-3 sm:my-6 ml-5">
+            <h2 class="text-primary-grey mb-2">HELP</h2>
             <!-- links -->
-            <a href="#">Payments</a>
-            <a href="#">Shipping</a>
-            <a href="#">Cancellation & Returns</a>
-            <a href="#">FAQ</a>
-            <a href="#">Report Infringement</a>
+            <a href="https://www.flipkart.com/pages/payments" class="hover:underline">Payments</a>
+            <a href="https://www.flipkart.com/pages/shipping" class="hover:underline">Shipping</a>
+            <a href="https://www.flipkart.com/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG" class="hover:underline">Cancellation & Returns</a>
+            <a href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG" class="hover:underline">FAQ</a>
+            <a href="https://seller.flipkart.com/fiv" class="hover:underline">Report Infringement</a>
             <!-- links -->
         </div>
         <!-- help column -->
 
         <!-- policy column -->
-        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
-            <h2 class="text-gray-400 mb-2">POLICY</h2>
+        <div class="w-full sm:w-1/5 flex flex-col gap-2 my-3 sm:my-6 ml-5">
+            <h2 class="text-primary-grey mb-2">POLICY</h2>
             <!-- links -->
-            <a href="#">Return Policy</a>
-            <a href="#">Terms Of Use</a>
-            <a href="#">Security</a>
-            <a href="#">Privacy</a>
-            <a href="#">Sitemap</a>
-            <a href="#">EPR Compliance</a>
+            <a href="https://www.flipkart.com/pages/returnpolicy" class="hover:underline">Return Policy</a>
+            <a href="https://www.flipkart.com/pages/terms" class="hover:underline">Terms Of Use</a>
+            <a href="https://www.flipkart.com/pages/paymentsecurity" class="hover:underline">Security</a>
+            <a href="https://www.flipkart.com/pages/privacypolicy" class="hover:underline">Privacy</a>
+            <a href="https://www.flipkart.com/sitemap" class="hover:underline">Sitemap</a>
+            <a href="https://www.flipkart.com/pages/ewaste-compliance-tnc" class="hover:underline">EPR Compliance</a>
             <!-- links -->
         </div>
         <!-- policy column -->
 
         <!-- socials column -->
-        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
-            <h2 class="text-gray-400 mb-2">SOCIAL</h2>
+        <div class="w-full sm:w-1/5 flex flex-col gap-2 my-3 sm:my-6 ml-5">
+            <h2 class="text-primary-grey mb-2">SOCIAL</h2>
             <!-- links -->
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">YouTube</a>
+            <a href="https://www.facebook.com/flipkart" class="hover:underline">Facebook</a>
+            <a href="https://twitter.com/flipkart" class="hover:underline">Twitter</a>
+            <a href="https://www.youtube.com/flipkart" class="hover:underline">YouTube</a>
             <!-- links -->
         </div>
         <!-- socials column -->
         </div>
 
 
-        <div class="border-gray-700 h-36 w-1 border-l mr-5 mt-6"></div>
-        <div class="w-5/12 my-6 flex justify-between">
-            <div class="w-1/2">
-                <h2 class="text-gray-400">Mail Us:</h2>
+        <div class="border-gray-600 h-36 w-1 border-l mr-5 mt-6 hidden sm:block"></div>
+        <div class="w-full sm:w-5/12 my-6 mx-5 sm:mx-0 flex flex-col sm:flex-row gap-2 sm:gap-0 justify-between">
+            <div class="w-full sm:w-1/2">
+                <h2 class="text-primary-grey">Mail Us:</h2>
                 <p class="mt-2 leading-5">Flipkart Internet Private Limited,<br>
                     Buildings Alyssa, Begonia &<br>                  
                     Clove Embassy Tech Village,<br>           
@@ -1088,8 +1028,8 @@
                 </p>
             </div>
 
-            <div class="w-1/2">
-                <h2 class="text-gray-400">Registered Office Address:</h2>
+            <div class="w-full sm:w-1/2">
+                <h2 class="text-primary-grey">Registered Office Address:</h2>
                 <p class="mt-2 leading-5">Flipkart Internet Private Limited,<br>
                     Buildings Alyssa, Begonia &<br>                   
                     Clove Embassy Tech Village,<br>                   
@@ -1097,7 +1037,7 @@
                     Bengaluru, 560103,<br>                  
                     Karnataka, India <br>               
                     CIN : U51109KA2012PTC066107<br>                
-                    Telephone: <a class="text-primary" href="tel:18002029898">1800 202 9898</a>
+                    Telephone: <a class="text-primary-blue" href="tel:18002029898">1800 202 9898</a>
                 </p>
             </div>
         </div>
@@ -1105,19 +1045,19 @@
     </footer>
     <!-- footer ends -->
 
-    <div class="px-16 py-6 w-full bg-gray-800 flex justify-between items-center text-sm text-white">
-        <a href="#">
-           <i class="fas fa-briefcase text-yellow-400"></i>&nbsp;&nbsp; Sell On Flipkart
+    <!-- copyright cards footer -->
+    <div class="px-16 py-6 w-full bg-primary-darkBlue hidden sm:flex justify-between items-center text-sm text-white">
+        <a href="https://seller.flipkart.com/sell-online" class="flex items-center gap-2">
+           <i class="material-icons text-yellow-400 md-20">work</i> Sell On Flipkart
         </a>
-        <a href="#">
-            <i class="fas fa-star text-yellow-400"></i>&nbsp;&nbsp; Advertise
-            <!-- <i class="fas fa-star text-gray-800 bg-yellow-400 w-5 h-5 text-xs text-center p-0.5 rounded-full"></i>&nbsp;&nbsp; Advertise -->
+        <a href="https://brands.flipkart.com" class="flex items-center gap-2">
+            <i class="material-icons text-yellow-400 md-20">stars</i> Advertise
          </a>
-         <a href="#">
-            <i class="fas fa-gift text-yellow-400"></i>&nbsp;&nbsp; Gift Cards
+         <a href="https://www.flipkart.com/the-gift-card-store" class="flex items-center gap-2">
+            <i class="material-icons text-yellow-400 md-20">card_giftcard</i> Gift Cards
          </a>
-         <a href="#">
-            <i class="fas fa-question-circle text-yellow-400"></i>&nbsp;&nbsp; Help Center
+         <a href="https://www.flipkart.com/helpcentre" class="flex items-center gap-2">
+            <i class="material-icons text-yellow-400 md-20">help</i> Help Center
          </a>
 
          <div class="">
@@ -1125,17 +1065,18 @@
          </div>
          <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
     </div>
+    <!-- copyright cards footer -->
 
-        <!-- jquery cdn -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-        <!-- owl carousel cdn -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-        <!-- js-image-zoom cdn -->
-        <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <!-- custom js -->
-        <script src="./script.js"></script>
+    <!-- owl carousel cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- js-image-zoom cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./script.js"></script>
 </body>
 </html>
