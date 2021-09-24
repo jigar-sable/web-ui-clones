@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- owl carousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./assets/style.css">
+<style>
+ .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+ #topSelection .owl-carousel .owl-nav button {
+     top: 20%;
+ }
+ #recommended .owl-carousel .owl-nav button {
+     top: 25%;
+ }
+ .owl-carousel .owl-nav button.owl-prev {
+  left: 2.5rem;
+}
+ .owl-carousel .owl-nav button.owl-prev i,
+ .owl-carousel .owl-nav button.owl-next i {
+  font-size: 1.7rem;
+  color: #000;
+  margin-left: -3.5rem;
+  padding: 2.5rem 1rem;
+  padding-left: 1.5rem;
+  box-shadow: 0 8px 12px rgba(0,0,0,.2);
+  background: #fff;
+  border-radius: 5px;
+}
+ .owl-carousel .owl-nav button.owl-next {
+  right: 2rem;
+}
+ .owl-carousel .owl-nav button.owl-next i {
+    margin-right: -5.5rem;
+    padding: 2.5rem 1.5rem;
+    padding-left: 1rem;
+}
+ .owl-next.disabled, .owl-prev.disabled {
+    display: none !important;
+}
+
+.md-16 {
+    font-size: 16px;
+}
+.md-18 {
+    font-size: 18px;
+}
+.md-20 {
+    font-size: 20px;
+}
+.md-22 {
+    font-size: 22px;
+}
+
+
+.arrow_down {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #fff;
+}
+
+.active {
+    display: flex;
+}
+</style>
+
+</head>
+<body class="bg-gray-100">
+    
+
+    <!-- header starts -->
+    <header class="bg-primary sticky top-0 py-2.5 w-full z-10">
+
+        <!-- navbar container -->
+        <div class="w-9/12 m-auto flex justify-between items-center relative">
+
+            <!-- logo & search container -->
+            <div class="flex items-center flex-1">
+            <div class="h-7 mr-4">
+                <img class="h-full w-full object-contain" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fk-plus_3b0baa.png" alt="">
+            </div>
+
+            <!-- search container -->
+            <div class="w-9/12 px-4 py-1.5 flex justify-between items-center shadow-md bg-white rounded-sm">
+                <input class="text-sm flex-1 outline-none border-none" type="text" placeholder="Search for products, brands and more">
+                <span class="material-icons text-primary">search</span>
+            </div>
+            <!-- search container -->
+            </div>
+            <!-- logo & search container -->
+
+            <!-- right navs -->
+            <div class="flex items-center justify-between gap-7 relative">
+                <a href="#" class="userDropDown flex items-center text-white font-medium gap-1">Jigar
+                    <span class="material-icons text-sm">expand_more</span>
+                </a>
+
+               <!-- dropdown navbar hover tabs -->
+               <div class="userDropDownMenu hidden absolute w-60 -left-24 ml-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100 rounded-t" href="#">
+                        <span class="material-icons md-18 text-primary">account_circle</span>
+                        My Profile
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">offline_bolt</span>
+                        Supercoin Zone
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">add_circle</span>
+                        Flipkart Plus Zone
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">shopping_bag</span>
+                        Orders
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">favorite</span>
+                        Wishlist
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">chat</span>
+                        My Chats
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">redeem</span>
+                        Coupons
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">account_balance_wallet</span>
+                        Gift Cards
+                   </a>
+                   <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                        <span class="material-icons md-18 text-primary">notifications</span>
+                        Notifications
+                   </a>
+                   <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-100 rounded-b" href="#">
+                        <span class="material-icons md-18 text-primary">power_settings_new</span>
+                        Logout
+                   </a>
+                   <div class="absolute right-1/2 -top-2.5">
+                        <div class="arrow_down"></div>
+                   </div>
+               </div>
+               <!-- dropdown navbar hover tabs -->
+
+                <a href="#" class="moreDropDown flex items-center text-white font-medium gap-1">More
+                    <span class="material-icons text-sm">expand_more</span>
+                </a>
+                <!-- dropdown navbar hover tabs -->
+                <div class="moreDropDownMenu hidden absolute w-60 -right-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100 rounded-t" href="#">
+                     <span class="material-icons md-18 text-primary">notifications</span>
+                     Notification Preferences
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">business_center</span>
+                     Sell on Flipkart
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">live_help</span>
+                     24x7 Customer Care
+                </a>
+                <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-100" href="#">
+                     <span class="material-icons md-18 text-primary">trending_up</span>
+                     Advertise
+                </a>
+                <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-100 rounded-b" href="#">
+                     <span class="material-icons md-18 text-primary">download</span>
+                     Download App
+                </a>
+                <div class="absolute right-1/2 -top-2.5">
+                     <div class="arrow_down"></div>
+                </div>
+                </div>
+                <!-- dropdown navbar hover tabs -->
+
+                <a href="#" class="flex items-center text-white font-medium gap-2 relative">
+                    <span class="material-icons">shopping_cart</span>
+                    <!-- badge count -->
+                    <div class="w-5 h-5 p-2 bg-red-500 text-xs rounded-full absolute -top-2 left-3 flex justify-center items-center">
+                        1
+                    </div>
+                    <!-- badge count -->
+                    Cart
+                </a>
+            </div>
+            <!-- right navs -->
+
+        </div>
+        <!-- navbar container -->
+    </header>
+    <!-- header ends -->
+
+
+    <!-- categories container header -->
+    <section class="bg-white w-full px-12 shadow overflow-hidden border-b">
+
+        <!-- categories container -->
+        <div class="flex items-center justify-between p-0.5">
+            
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Top Offers</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Grocery</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Mobiles</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Mobiles</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Fashion</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Electronics</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Home</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Appliances</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Travel</span>
+        </a>
+        <!-- category -->
+
+        <!-- category -->
+        <a class="flex flex-col gap-1 items-center p-2 group" href="#">
+            <span class="text-sm text-gray-800 font-medium group-hover:text-primary">Beauty, Toys & More</span>
+        </a>
+        <!-- category -->
+        </div>
+    </section>
+    <!-- categories container header -->
+
+    <!-- main sections starts -->
+    <main class="w-full">
+
+        <!-- row -->
+        <div class="flex gap-3.5 w-11/12 mt-4 m-auto mb-7">
+            <!-- sidebar column  -->
+            <div class="flex flex-col gap-4 w-1/4 px-1">
+
+                <!-- profile card -->
+                <div class="flex items-center gap-4 p-3 bg-white rounded-sm shadow">
+                    <!-- user icon -->
+                    <div class="w-12 h-12 rounded-full">
+                        <img class="h-full w-full object-contain" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/profile-pic-male_4811a1.svg" alt="">
+                    </div>
+                    <!-- user icon -->
+                    <div class="flex flex-col gap-1">
+                        <p class="text-xs">Hello,</p>
+                        <h2 class="font-medium">Rohan Doeee</h2>
+                    </div>
+                </div>
+                <!-- profile card -->
+
+                <!-- nav tiles -->
+                <div class="flex flex-col bg-white rounded-sm shadow">
+
+                    <!-- my orders tab -->
+                    <div class="flex items-center gap-5 px-4 py-4 border-b">
+                        <span class="material-icons text-primary">folder</span>
+                        <a class="flex w-full justify-between font-medium text-gray-500 hover:text-primary" href="#">
+                            MY ORDERS
+                            <span class="material-icons">chevron_right</span>
+                        </a>
+                    </div>
+                    <!-- my orders tab -->
+
+                    <!-- account settings tab -->
+                    <div class="flex items-center gap-5 px-4 py-4">
+                        <span class="material-icons text-primary">person</span>
+                        <p class="flex w-full justify-between font-medium text-gray-500">ACCOUNT SETTINGS</p>
+                    </div>
+                    <div class="flex flex-col pb-3 border-b text-sm">
+                    <a class="bg-blue-50 p-3 pl-14 text-blue-700 font-medium" href="#">Profile Information</a>
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-blue-700" href="#">Manage Addresses</a>
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-blue-700" href="#">PAN Card Information</a>
+                    </div>
+                    <!-- account settings tab -->
+
+                    <!-- payments tab -->
+                    <div class="flex items-center gap-5 px-4 py-4">
+                        <span class="material-icons text-primary">account_balance_wallet</span>
+                        <p class="flex w-full justify-between font-medium text-gray-500">PAYMENTS</p>
+                    </div>
+                    <div class="flex flex-col pb-3 border-b text-sm">
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-primary flex justify-between pr-6" href="#">Gift Cards <span class="font-medium text-primaryGreen">₹0</span></a>
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-primary" href="#">Saved UPI</a>
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-primary" href="#">Saved Cards</a>
+                    </div>
+                    <!-- payments tab -->
+
+                    <!-- my chats tab -->
+                    <div class="flex items-center gap-5 px-4 py-4 border-b">
+                        <span class="material-icons text-primary">chat</span>
+                        <a class="flex w-full justify-between font-medium text-gray-500 hover:text-primary" href="#">
+                            MY CHATS
+                            <span class="material-icons">chevron_right</span>
+                        </a>
+                    </div>
+                    <!-- my chats tab -->
+
+                    <!-- my stuff tab -->
+                    <div class="flex items-center gap-5 px-4 py-4">
+                        <span class="material-icons text-primary">account_balance_wallet</span>
+                        <p class="flex w-full justify-between font-medium text-gray-500">MY STUFF</p>
+                    </div>
+                    <div class="flex flex-col pb-3 border-b text-sm">
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-primary" href="#">My Coupons</a>
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-primary" href="#">My Reviews & Ratings</a>
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-primary" href="#">All Notifications</a>
+                    <a class="p-3 pl-14 hover:bg-blue-50 hover:text-primary" href="#">My Wishlist</a>
+                    </div>
+                    <!-- my stuff tab -->
+
+                    <!-- logout tab -->
+                    <div class="flex items-center gap-5 px-4 py-4 border-b">
+                        <span class="material-icons text-primary">power_settings_new</span>
+                        <a class="flex w-full justify-between font-medium text-gray-500 hover:text-primary" href="#">
+                            Logout
+                            <span class="material-icons">chevron_right</span>
+                        </a>
+                    </div>
+                    <!-- logout tab -->
+
+                </div>
+                <!-- nav tiles -->
+
+                <!-- frequenty visited tab -->
+                <div class="flex flex-col items-start gap-2 p-4 bg-white rounded-sm shadow">
+                    <span class="text-xs font-medium">Frequently Visited:</span>
+                    <div class="flex gap-2 text-xs text-gray-500">
+                        <a href="#">Change Password</a>
+                        <a href="#">Track Order</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                </div>
+                <!-- frequenty visited tab -->
+            </div>
+            <!-- sidebar column  -->
+
+            <!-- wishlist column -->
+            <div class="flex-1 shadow bg-white">
+                <!-- wishlist container -->
+                <div class="flex flex-col">
+                    <span class="font-medium text-lg px-8 py-4 border-b">My Wishlist (26)</span>
+
+                    <a class="flex gap-4 items-stretch border-b h-40 p-4 w-full" href="#">
+                        <div class="w-1/6 h-28 p-1">
+                            <img class="h-full w-full object-contain" src="https://rukminim1.flixcart.com/image/312/312/kmmcrrk0/mobile/4/g/a/8-rmx3085-realme-original-imagfgpfdkyc29zc.jpeg?q=70" alt="">
+                        </div>
+
+                        <!-- description -->
+                        <div class="flex flex-col gap-5 w-full bg-yellow-200">
+                            <!-- product title -->
+                            <div class="flex justify-between">
+                                <div class="flex flex-col">
+                                    <p>realme 8 (Cyber Black, 128 GB)</p>
+                                    
+                                </div>
+                            </div>
+                            <!-- product title -->
+                        </div>
+                        <!-- description -->
+                    </a>
+
+                </div>
+                <!-- wishlist container -->
+                
+            </div>
+            <!-- wishlist column -->
+        </div>
+        <!-- row -->
+
+    </main>
+    <!-- main sections starts -->
+
+
+
+    <!-- footer starts -->
+    <footer class="w-full py-4 px-12 bg-gray-800 text-white text-xs border-b border-gray-500 flex">
+        <div class="w-7/12 flex">
+        <!-- about column -->
+        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
+            <h2 class="text-gray-400 mb-2">ABOUT</h2>
+            <!-- links -->
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Flipkart Stories</a>
+            <a href="#">Press</a>
+            <a href="#">Flipkart Wholesale</a>
+            <a href="#">Corporate Information</a>
+            <!-- links -->
+        </div>
+        <!-- about column -->
+
+        <!-- help column -->
+        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
+            <h2 class="text-gray-400 mb-2">HELP</h2>
+            <!-- links -->
+            <a href="#">Payments</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellation & Returns</a>
+            <a href="#">FAQ</a>
+            <a href="#">Report Infringement</a>
+            <!-- links -->
+        </div>
+        <!-- help column -->
+
+        <!-- policy column -->
+        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
+            <h2 class="text-gray-400 mb-2">POLICY</h2>
+            <!-- links -->
+            <a href="#">Return Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Security</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+            <a href="#">EPR Compliance</a>
+            <!-- links -->
+        </div>
+        <!-- policy column -->
+
+        <!-- socials column -->
+        <div class="w-1/5 flex flex-col gap-2 my-6 ml-5">
+            <h2 class="text-gray-400 mb-2">SOCIAL</h2>
+            <!-- links -->
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+            <!-- links -->
+        </div>
+        <!-- socials column -->
+        </div>
+
+
+        <div class="border-gray-700 h-36 w-1 border-l mr-5 mt-6"></div>
+        <div class="w-5/12 my-6 flex justify-between">
+            <div class="w-1/2">
+                <h2 class="text-gray-400">Mail Us:</h2>
+                <p class="mt-2 leading-5">Flipkart Internet Private Limited,<br>
+                    Buildings Alyssa, Begonia &<br>                  
+                    Clove Embassy Tech Village,<br>           
+                    Outer Ring Road, Devarabeesanahalli Village,<br>             
+                    Bengaluru, 560103,<br>
+                    Karnataka, India
+                </p>
+            </div>
+
+            <div class="w-1/2">
+                <h2 class="text-gray-400">Registered Office Address:</h2>
+                <p class="mt-2 leading-5">Flipkart Internet Private Limited,<br>
+                    Buildings Alyssa, Begonia &<br>                   
+                    Clove Embassy Tech Village,<br>                   
+                    Outer Ring Road, Devarabeesanahalli Village,<br>                  
+                    Bengaluru, 560103,<br>                  
+                    Karnataka, India <br>               
+                    CIN : U51109KA2012PTC066107<br>                
+                    Telephone: <a class="text-primary" href="tel:18002029898">1800 202 9898</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer ends -->
+
+    <div class="px-16 py-6 w-full bg-gray-800 flex justify-between items-center text-sm text-white">
+        <a href="#">
+           <i class="fas fa-briefcase text-yellow-400"></i>&nbsp;&nbsp; Sell On Flipkart
+        </a>
+        <a href="#">
+            <i class="fas fa-star text-yellow-400"></i>&nbsp;&nbsp; Advertise
+            <!-- <i class="fas fa-star text-gray-800 bg-yellow-400 w-5 h-5 text-xs text-center p-0.5 rounded-full"></i>&nbsp;&nbsp; Advertise -->
+         </a>
+         <a href="#">
+            <i class="fas fa-gift text-yellow-400"></i>&nbsp;&nbsp; Gift Cards
+         </a>
+         <a href="#">
+            <i class="fas fa-question-circle text-yellow-400"></i>&nbsp;&nbsp; Help Center
+         </a>
+
+         <div class="">
+            &copy; 2007-2021 Flipkart.com
+         </div>
+         <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
+    </div>
+
+        <!-- jquery cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!-- owl carousel cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+        <!-- js-image-zoom cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+
+        <!-- custom js -->
+        <script src="./script.js"></script>
+</body>
+</html>
