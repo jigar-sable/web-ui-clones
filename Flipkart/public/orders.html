@@ -280,23 +280,74 @@
 
         <!-- row -->
         <div class="flex gap-3.5 mt-6 mx-3 m-auto mb-7">
+
             <!-- sidebar column  -->
-            <div class="flex flex-col gap-4 w-1/5 px-1">
+            <div class="flex flex-col w-1/5 px-1">
 
                 <!-- nav tiles -->
                 <div class="flex flex-col bg-white rounded-sm shadow">
 
-                    <!-- my stuff tab -->
-                    <div class="flex items-center gap-5 px-4 py-4">
-                        <p class="flex w-full justify-between font-medium">Filters</p>
+                    <!-- filters header -->
+                    <div class="flex items-center gap-5 px-4 py-2 border-b">
+                        <p class="flex w-full justify-between text-lg font-medium">Filters</p>
                     </div>
-                    <div class="flex flex-col pb-3 border-b text-sm">
-                    <a class="p-3 pl-4 hover:bg-blue-50 hover:text-primary" href="#">My Coupons</a>
-                    <a class="p-3 pl-4 hover:bg-blue-50 hover:text-primary" href="#">My Reviews & Ratings</a>
-                    <a class="p-3 pl-4 hover:bg-blue-50 hover:text-primary" href="#">All Notifications</a>
-                    <a class="p-3 pl-4 hover:bg-blue-50 hover:text-primary" href="#">My Wishlist</a>
+
+                    <!-- order status checkboxes -->
+                    <div class="flex flex-col py-3 text-sm">
+                        <span class="font-medium px-4">ORDER STATUS</span>
+
+                        <!-- checkboxes -->
+                        <div class="flex flex-col gap-3 px-4 mt-3 pb-3 border-b">
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" name="" id="ontw" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <label for="ontw">On the way</label>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" name="" id="ontw" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <label for="ontw">Delivered</label>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" name="" id="ontw" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <label for="ontw">Cancelled</label>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" name="" id="ontw" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <label for="ontw">Returned</label>
+                            </div>
+                        </div>
+                        <!-- checkboxes -->
+
                     </div>
-                    <!-- my stuff tab -->
+                    <!-- order status checkboxes -->
+
+                    <!-- order time checkboxes -->
+                    <div class="flex flex-col pb-2 text-sm">
+                        <span class="font-medium px-4">ORDER TIME</span>
+
+                        <!-- checkboxes -->
+                        <div class="flex flex-col gap-3 px-4 mt-3 pb-3">
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" name="" id="ontw" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <label for="ontw">Last 30 days</label>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" name="" id="ontw" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <label for="ontw">2020</label>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" name="" id="ontw" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <label for="ontw">2019</label>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" name="" id="ontw" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                <label for="ontw">Older</label>
+                            </div>
+                        </div>
+                        <!-- checkboxes -->
+
+                    </div>
+                    <!-- order time checkboxes -->
+
 
                 </div>
                 <!-- nav tiles -->
