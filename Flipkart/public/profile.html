@@ -173,7 +173,7 @@
     <main class="w-full">
 
         <!-- row -->
-        <div class="flex gap-3.5 px-1 sm:px-0 sm:w-11/12 mt-4 m-auto mb-7">
+        <div class="flex gap-3.5 sm:w-11/12 sm:mt-4 m-auto mb-7">
             <!-- sidebar column  -->
             <div class="hidden sm:flex flex-col gap-4 w-1/4 px-1">
 
@@ -278,14 +278,14 @@
             <!-- sidebar column  -->
 
             <!-- details column -->
-            <div class="flex-1 shadow bg-white">
+            <div class="flex-1 overflow-hidden shadow bg-white">
                 <!-- edit info container -->
-                <div class="flex flex-col gap-12 mx-8 my-6">
+                <div class="flex flex-col gap-12 m-4 sm:mx-8 sm:my-6">
                     <!-- personal info -->
                     <div class="flex flex-col gap-5 items-start">
-                        <span class="font-medium text-lg">Personal Information <a class="text-sm text-primary font-medium ml-8" href="#">Edit</a></span>
+                        <span class="font-medium text-lg">Personal Information <a class="text-sm text-primary-blue font-medium ml-8" href="#">Edit</a></span>
 
-                        <div class="flex items-center gap-3">
+                        <div class="flex flex-col sm:flex-row items-center gap-3">
                             <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border">
                                 <label for="fname" class="text-xs text-gray-500">First Name</label>
                                 <input type="text" value="Jigar" class="text-sm outline-none border-none">
@@ -294,7 +294,7 @@
                                 <label for="lname" class="text-xs text-gray-500">Last Name</label>
                                 <input type="text" value="Sable" class="text-sm outline-none border-none">
                             </div>
-                            <button class="px-11 py-3 bg-primary border rounded text-white font-medium">SAVE</button>
+                            <button class="w-full sm:w-auto px-11 py-3 bg-primary-blue border rounded text-white font-medium hover:bg-blue-600 transition-colors duration-75">SAVE</button>
                         </div>
 
                         <!-- gender -->
@@ -319,8 +319,8 @@
                     <!-- email address info -->
                     <div class="flex flex-col gap-5 items-start">
                         <span class="font-medium text-lg">Email Address 
-                            <a class="text-sm text-primary font-medium ml-8" href="#">Edit</a>
-                            <a class="text-sm text-primary font-medium ml-8" href="#">Change Password</a>
+                            <a class="text-sm text-primary-blue font-medium ml-8" href="#">Edit</a>
+                            <a class="text-sm text-primary-blue font-medium ml-8" href="#">Change Password</a>
                         </span>
 
                         <div class="flex items-center gap-3">
@@ -328,7 +328,7 @@
                                 <label for="email" class="text-xs text-gray-500">Email Address</label>
                                 <input type="email" value="jigarsable@gmail.com" class="text-sm outline-none border-none">
                             </div>
-                            <button class="px-11 py-3 bg-primary border rounded text-white font-medium">SAVE</button>
+                            <button class="px-11 py-3 bg-primary-blue border rounded text-white font-medium hover:bg-blue-600 transition-colors duration-75">SAVE</button>
                         </div>
 
                     </div>
@@ -337,7 +337,7 @@
                     <!-- mobile number info -->
                     <div class="flex flex-col gap-5 items-start">
                         <span class="font-medium text-lg">Mobile Number 
-                            <a class="text-sm text-primary font-medium ml-8" href="#">Edit</a>
+                            <a class="text-sm text-primary-blue font-medium ml-8" href="#">Edit</a>
                         </span>
 
                         <div class="flex items-center gap-3">
@@ -345,7 +345,7 @@
                                 <label for="phone" class="text-xs text-gray-500">Mobile Number</label>
                                 <input type="tel" value="+917041411501" class="text-sm outline-none border-none">
                             </div>
-                            <button class="px-11 py-3 bg-primary border rounded text-white font-medium">SAVE</button>
+                            <button class="px-11 py-3 bg-primary-blue border rounded text-white font-medium hover:bg-blue-600 transition-colors duration-75">SAVE</button>
                         </div>
 
                     </div>
@@ -357,20 +357,20 @@
                         <h4 class="text-sm font-medium">What happens when I update my email address (or mobile number)?</h4>
                         <p class="text-sm">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
                    
-                        <h4 class="text-sm font-medium">What happens when I update my email address (or mobile number)?</h4>
-                        <p class="text-sm">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                        <h4 class="text-sm font-medium">When will my Flipkart account be updated with the new email address (or mobile number)?</h4>
+                        <p class="text-sm">It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
                    
-                        <h4 class="text-sm font-medium">What happens when I update my email address (or mobile number)?</h4>
-                        <p class="text-sm">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                        <h4 class="text-sm font-medium">What happens to my existing Flipkart account when I update my email address (or mobile number)?</h4>
+                        <p class="text-sm">Updating your email address (or mobile number) doesn't invalidate your account. Your account remains fully functional. You'll continue seeing your Order history, saved information and personal details.</p>
                    
-                        <h4 class="text-sm font-medium">What happens when I update my email address (or mobile number)?</h4>
-                        <p class="text-sm">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                        <h4 class="text-sm font-medium">Does my Seller account get affected when I update my email address?</h4>
+                        <p class="text-sm">Flipkart has a 'single sign-on' policy. Any changes will reflect in your Seller account also.</p>
                    
                     </div>
                     <!-- faqs -->
 
                     <!-- deactivate account -->
-                    <a class="text-sm text-primary font-medium" href="#">Deactivate Account</a>
+                    <a class="text-sm text-primary-blue font-medium" href="#">Deactivate Account</a>
                     <!-- deactivate account -->
                 </div>
                 <!-- edit info container -->
