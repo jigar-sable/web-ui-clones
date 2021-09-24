@@ -33565,6 +33565,11 @@ body {
 
 /* material icons sizing */
 
+.md-14 {
+  font-size: 14px;
+  transform: rotate(0.03deg);
+}
+
 .md-16 {
   font-size: 16px;
   transform: rotate(0.03deg);
