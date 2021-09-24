@@ -279,7 +279,7 @@
     <main class="w-full">
 
         <!-- row -->
-        <div class="flex w-11/12 mt-4 m-auto mb-7">
+        <div class="flex gap-3.5 w-11/12 mt-4 m-auto mb-7">
             <!-- sidebar column  -->
             <div class="flex flex-col gap-4 w-1/4 px-1">
 
@@ -369,12 +369,119 @@
 
                 </div>
                 <!-- nav tiles -->
+
+                <!-- frequenty visited tab -->
+                <div class="flex flex-col items-start gap-2 p-4 bg-white rounded-sm shadow">
+                    <span class="text-xs font-medium">Frequently Visited:</span>
+                    <div class="flex gap-2 text-xs text-gray-500">
+                        <a href="#">Change Password</a>
+                        <a href="#">Track Order</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                </div>
+                <!-- frequenty visited tab -->
             </div>
             <!-- sidebar column  -->
 
             <!-- details column -->
-            <div class="flex-1">
+            <div class="flex-1 shadow bg-white">
+                <!-- edit info container -->
+                <div class="flex flex-col gap-12 mx-8 my-6">
+                    <!-- personal info -->
+                    <div class="flex flex-col gap-5 items-start">
+                        <span class="font-medium text-lg">Personal Information <a class="text-sm text-primary font-medium ml-8" href="#">Edit</a></span>
 
+                        <div class="flex items-center gap-3">
+                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border">
+                                <label for="fname" class="text-xs text-gray-500">First Name</label>
+                                <input type="text" value="Jigar" class="text-sm outline-none border-none">
+                            </div>
+                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border">
+                                <label for="lname" class="text-xs text-gray-500">Last Name</label>
+                                <input type="text" value="Sable" class="text-sm outline-none border-none">
+                            </div>
+                            <button class="px-11 py-3 bg-primary border rounded text-white font-medium">SAVE</button>
+                        </div>
+
+                        <!-- gender -->
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-sm">Your Gender</h2>
+                            <div class="flex items-center gap-8">
+                                <div class="flex items-center gap-4">
+                                <input type="radio" name="gender" id="male" class="h-4 w-4">
+                                <label for="male">Male</label>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                <input type="radio" name="gender" id="female" class="h-4 w-4">
+                                <label for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- gender -->
+
+                    </div>
+                    <!-- personal info -->
+
+                    <!-- email address info -->
+                    <div class="flex flex-col gap-5 items-start">
+                        <span class="font-medium text-lg">Email Address 
+                            <a class="text-sm text-primary font-medium ml-8" href="#">Edit</a>
+                            <a class="text-sm text-primary font-medium ml-8" href="#">Change Password</a>
+                        </span>
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border">
+                                <label for="email" class="text-xs text-gray-500">Email Address</label>
+                                <input type="email" value="jigarsable@gmail.com" class="text-sm outline-none border-none">
+                            </div>
+                            <button class="px-11 py-3 bg-primary border rounded text-white font-medium">SAVE</button>
+                        </div>
+
+                    </div>
+                    <!-- email address info -->
+
+                    <!-- mobile number info -->
+                    <div class="flex flex-col gap-5 items-start">
+                        <span class="font-medium text-lg">Mobile Number 
+                            <a class="text-sm text-primary font-medium ml-8" href="#">Edit</a>
+                        </span>
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border">
+                                <label for="phone" class="text-xs text-gray-500">Mobile Number</label>
+                                <input type="tel" value="+917041411501" class="text-sm outline-none border-none">
+                            </div>
+                            <button class="px-11 py-3 bg-primary border rounded text-white font-medium">SAVE</button>
+                        </div>
+
+                    </div>
+                    <!-- mobile number info -->
+
+                    <!-- faqs -->
+                    <div class="flex flex-col gap-4 mt-4">
+                        <span class="font-medium text-lg mb-2">FAQS</span>
+                        <h4 class="text-sm font-medium">What happens when I update my email address (or mobile number)?</h4>
+                        <p class="text-sm">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                   
+                        <h4 class="text-sm font-medium">What happens when I update my email address (or mobile number)?</h4>
+                        <p class="text-sm">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                   
+                        <h4 class="text-sm font-medium">What happens when I update my email address (or mobile number)?</h4>
+                        <p class="text-sm">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                   
+                        <h4 class="text-sm font-medium">What happens when I update my email address (or mobile number)?</h4>
+                        <p class="text-sm">Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                   
+                    </div>
+                    <!-- faqs -->
+
+                    <!-- deactivate account -->
+                    <a class="text-sm text-primary font-medium" href="#">Deactivate Account</a>
+                    <!-- deactivate account -->
+                </div>
+                <!-- edit info container -->
+                
+                <img class="w-full object-contain" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/myProfileFooter_4e9fe2.png" alt="">
             </div>
             <!-- details column -->
         </div>
