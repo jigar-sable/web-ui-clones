@@ -107,4 +107,20 @@ $(document).ready(function() {
     // };
     // new ImageZoom(document.querySelector('.image-box'), options);
 
+    $('#qtyUp').on('click',function(e){
+        if($('#qtyInput').val()>=1 && $('#qtyInput').val()<=10){
+            $('#qtyInput').val(function(i, oldval){
+                    return ++oldval;
+                });
+            }
+    });
+
+    $('#qtyDown').on('click',function(){
+        if($('#qtyInput').val()>=2 && $('#qtyInput').val()<=11){
+            $('#qtyInput').val(function(i, qtynos){
+                return --qtynos;
+            })
+        }
+    });
+
 });
