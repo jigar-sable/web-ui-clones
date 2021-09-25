@@ -1,7 +1,7 @@
 let postsContainer = document.getElementById('post-container');
 let postCard = "";
 
-fetch("assests/posts.json")
+fetch("assets/posts.json")
 .then(response => response.json())
 .then(posts => {
     console.log(posts);
@@ -15,7 +15,7 @@ fetch("assests/posts.json")
           <!-- icon with name -->
           <div class="flex flex-auto space-x-3 items-center">
           <div class="w-11 h-11 p-0.5 rounded-full border-2 border-red-600">
-            <a href="#"><img class="w-full h-full rounded-full border object-cover" src="./assests/images/hero.png" alt=""></a>
+            <a href="#"><img class="w-full h-full rounded-full border object-cover" src="./assets/images/hero.png" alt=""></a>
           </div>
             <a class="text-black text-sm font-semibold hover:underline" href="#">jhon_doe</a>
           </div>
@@ -26,7 +26,7 @@ fetch("assests/posts.json")
           </div>
 
           <!-- post image container -->
-          <img class="w-full h-full object-cover object-center" src="assests/images/posts/${post.image}.jpg" alt="" draggable="false">
+          <img class="w-full h-full object-cover object-center" src="assets/images/posts/${post.image}.jpg" alt="" draggable="false">
 
           <!-- like comment container -->
           <div class="flex flex-col px-3 space-y-1 border-b pb-2">

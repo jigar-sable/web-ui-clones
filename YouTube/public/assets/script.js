@@ -1,7 +1,7 @@
 let videosContainer = document.getElementById('videos-container');
 let videoCard = "";
 
-fetch("assests/videos.json")
+fetch("assets/videos.json")
 .then(response => response.json())
 .then(videos => {
     // console.log(videos);

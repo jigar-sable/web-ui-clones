@@ -9,8 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build:css": "tailwind build -i src/style.css -o public/assests/style.css",
-    "prod": "NODE_ENV=production tailwind build -i src/style.css -o public/assests/style.css"
+    "build:css": "tailwind build -i src/style.css -o public/assets/style.css",
+    "prod": "NODE_ENV=production tailwind build -i src/style.css -o public/assets/style.css"
   },
   "author": "Jigar Sable",
   "license": "ISC"
