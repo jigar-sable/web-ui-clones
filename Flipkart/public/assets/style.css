@@ -33614,6 +33614,14 @@ body {
 
 /* hover navbar dropdown toggle */
 
+/* rotate dropdown arrows */
+
+.rotateDropDown {
+  transform: rotate(-180deg);
+}
+
+/* rotate dropdown arrows */
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

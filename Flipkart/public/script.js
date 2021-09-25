@@ -67,6 +67,19 @@ $(document).ready(function() {
         }
     });
 
+    // arrow dropdown rotate on hover
+    $('.userDropDown').hover(function() {
+        $('.userDropDown span').toggleClass('rotateDropDown');
+    }, function() {
+        $('.userDropDown span').toggleClass('rotateDropDown');
+    });
+
+    $('.moreDropDown').hover(function() {
+        $('.moreDropDown span').toggleClass('rotateDropDown');
+    }, function() {
+        $('.moreDropDown span').toggleClass('rotateDropDown');
+    });
+
     // dropdown hovers
     $('.userDropDown').hover(function(){
         $('.userDropDownMenu').toggleClass('active');

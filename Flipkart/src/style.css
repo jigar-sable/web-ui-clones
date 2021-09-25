@@ -87,3 +87,9 @@ body {
     display: flex;
 }
 /* hover navbar dropdown toggle */
+
+/* rotate dropdown arrows */
+.rotateDropDown {
+    transform: rotate(-180deg);
+}
+/* rotate dropdown arrows */
