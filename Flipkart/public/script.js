@@ -136,4 +136,74 @@ $(document).ready(function() {
         }
     });
 
+
+
+
+
+
+
+
+    // personal info edit buttons
+    $('#editPersonalBtn').click(function() {
+        // change button text
+        if($(this).text() == 'Edit'){
+            $(this).text('Cancel');
+        } else {
+            $(this).text('Edit');
+        }
+        $('#personalSaveBtn').toggleClass('hidden');
+
+        $('#personalInputs .inputs').toggleClass('bg-gray-100').toggleClass('cursor-not-allowed');
+       
+        $('#personalInputs .inputs input').toggleClass('cursor-not-allowed').toggleClass('text-gray-500');
+        $('#personalInputs .inputs input').prop("disabled") ?
+            $('#personalInputs .inputs input').prop('disabled', false) :
+            $('#personalInputs .inputs input').prop('disabled',true)
+
+
+        $('#radioInput .inputs').toggleClass('text-gray-500').toggleClass('cursor-not-allowed');
+        $('#radioInput .inputs input').prop("disabled") ?
+            $('#radioInput .inputs input').prop('disabled', false) :
+            $('#radioInput .inputs input').prop('disabled',true)
+    });
+    // personal info edit buttons
+
+    // personal info edit buttons
+    $('#emailEditBtn').click(function() {
+        // change button text
+        if($(this).text() == 'Edit'){
+            $(this).text('Cancel');
+        } else {
+            $(this).text('Edit');
+        }
+        $('#emailSaveBtn').toggleClass('hidden');
+
+        $('#emailInputs').toggleClass('bg-gray-100').toggleClass('cursor-not-allowed');
+       
+        $('#emailInputs input').toggleClass('cursor-not-allowed').toggleClass('text-gray-500');
+        $('#emailInputs input').prop("disabled") ?
+            $('#emailInputs input').prop('disabled', false) :
+            $('#emailInputs input').prop('disabled',true)
+    });
+    // personal info edit buttons
+
+    // personal info edit buttons
+    $('#mobEditBtn').click(function() {
+        // change button text
+        if($(this).text() == 'Edit'){
+            $(this).text('Cancel');
+        } else {
+            $(this).text('Edit');
+        }
+        $('#mobSaveBtn').toggleClass('hidden');
+
+        $('#mobInputs').toggleClass('bg-gray-100').toggleClass('cursor-not-allowed');
+       
+        $('#mobInputs input').toggleClass('cursor-not-allowed').toggleClass('text-gray-500');
+        $('#mobInputs input').prop("disabled") ?
+            $('#mobInputs input').prop('disabled', false) :
+            $('#mobInputs input').prop('disabled',true)
+    });
+    // personal info edit buttons
+
 });
