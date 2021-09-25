@@ -150,7 +150,7 @@
 <!-- header ends -->
 
     <!-- categories container header -->
-    <section class="hidden sm:block bg-white w-full px-2 sm:px-12 shadow overflow-hidden border-b mt-14">
+    <section class="hidden sm:block bg-white w-full px-2 sm:px-12 overflow-hidden border-b mt-14">
 
         <!-- categories container -->
         <div class="flex items-center justify-between p-0.5">
@@ -176,91 +176,50 @@
     <main class="w-full mt-12 sm:mt-0">
 
         <!-- row -->
-        <div class="flex sm:w-4/6 sm:mt-4 m-auto mb-7 bg-white">
+        <div class="flex sm:w-4/6 sm:mt-4 m-auto mb-7 bg-white shadow-lg">
             <!-- sidebar column  -->
-            <div class="hidden sm:flex flex-col gap-4 w-2/5 px-1">
-
+            <div class="loginSidebar bg-primary-blue px-9 py-10 hidden sm:flex flex-col gap-4 w-2/5">
+                <h1 class="font-medium text-white text-3xl">Looks like you're new here!</h1>
+                <p class="text-gray-200 text-lg pr-2">Sign up with your mobile number to get started</p>
             </div>
             <!-- sidebar column  -->
 
-            <!-- details column -->
-            <div class="flex-1 overflow-hidden shadow bg-white">
+            <!-- login column -->
+            <div class="flex-1 overflow-hidden">
+
                 <!-- edit info container -->
-                <div class="flex flex-col gap-12 m-4 sm:mx-3 sm:my-6">
-                    <!-- personal info -->
-                    <div class="flex flex-col gap-5 items-start">
-                        <span class="font-medium text-lg">Personal Information <span class="text-sm text-primary-blue font-medium ml-8 cursor-pointer" id="editPersonalBtn">Edit</span></span>
+                <div class="text-center py-10 px-14">
+                    
+                    <!-- input container -->
+                    <form action="#">
+                    <div class="flex flex-col w-full gap-3">
 
-                        <div class="flex flex-col sm:flex-row items-center gap-3" id="personalInputs">
-                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border inputs cursor-not-allowed bg-gray-100 focus-within:border-primary-blue">
-                                <label for="fname" class="text-xs text-gray-500">First Name</label>
-                                <input type="text" value="Jigar" class="text-sm outline-none border-none cursor-not-allowed text-gray-500" disabled>
-                            </div>
-                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border inputs cursor-not-allowed bg-gray-100 focus-within:border-primary-blue">
-                                <label for="lname" class="text-xs text-gray-500">Last Name</label>
-                                <input type="text" value="Sable" class="text-sm outline-none border-none cursor-not-allowed text-gray-500" disabled>
-                            </div>
-                            <button class="hidden w-full sm:w-auto px-11 py-3 bg-primary-blue border rounded text-white font-medium hover:bg-blue-600 transition-colors duration-75" id="personalSaveBtn">SAVE</button>
+                        <!-- email input -->
+                        <div class="flex flex-col gap-1">
+                        <h2 class="text-xs text-primary-grey text-left">Enter Email/Mobile Number</h2>
+                        <input type="email" name="" id="" placeholder="Enter Email/Mobile Number" class="py-2 outline-none border-b rounded-sm focus:border-primary-blue" required>
+                        <span class="text-xxs text-red-500 font-medium text-left mt-0.5 invisible">Please enter valid Email ID/Mobile number</span>
                         </div>
+                        <!-- email input -->
 
-                        <!-- gender -->
-                        <div class="flex flex-col gap-2">
-                            <h2 class="text-sm">Your Gender</h2>
-                            <div class="flex items-center gap-8" id="radioInput">
-                                <div class="flex items-center gap-4 inputs text-gray-500 cursor-not-allowed">
-                                <input type="radio" name="gender" checked id="male" class="h-4 w-4 cursor-not-allowed" disabled>
-                                <label for="male" class="cursor-not-allowed">Male</label>
-                                </div>
-                                <div class="flex items-center gap-4 inputs text-gray-500 cursor-not-allowed">
-                                <input type="radio" name="gender" id="female" class="h-4 w-4 cursor-not-allowed" disabled>
-                                <label for="female" class="cursor-not-allowed">Female</label>
-                                </div>
-                            </div>
+                        <!-- button container -->
+                        <div class="flex flex-col gap-2.5 mt-2 mb-52">
+                            <p class="text-xs text-primary-grey text-left">By continuing, you agree to Flipkart's <a href="https://www.flipkart.com/pages/terms" class="text-primary-blue"> Terms of Use</a> and <a href="https://www.flipkart.com/pages/privacypolicy" class="text-primary-blue"> Privacy Policy.</a></p>
+                            <button type="submit" class="text-white py-3 w-full bg-primary-orange shadow rounded-sm font-medium">Login</button>
+
+                            <a href="login.html" class="text-primary-blue py-3 mt-2 w-full shadow border rounded-sm font-medium">Existing User? Log in</a>
                         </div>
-                        <!-- gender -->
-
+                        <!-- button container -->
+    
                     </div>
-                    <!-- personal info -->
+                    </form>
+                    <!-- input container -->
 
-                    <!-- email address info -->
-                    <div class="flex flex-col gap-5 items-start">
-                        <span class="font-medium text-lg">Email Address 
-                            <span class="text-sm text-primary-blue font-medium ml-3 sm:ml-8 cursor-pointer" id="emailEditBtn">Edit</span>
-                            <a class="text-sm text-primary-blue font-medium ml-3 sm:ml-8" href="#">Change Password</a>
-                        </span>
-
-                        <div class="flex items-center gap-3">
-                            <div class="flex flex-col gap-0.5 sm:w-64 px-3 py-1.5 rounded-sm border bg-gray-100 cursor-not-allowed focus-within:border-primary-blue" id="emailInputs">
-                                <label for="email" class="text-xs text-gray-500">Email Address</label>
-                                <input type="email" value="jigarsable@gmail.com" class="text-sm outline-none border-none cursor-not-allowed text-gray-500" disabled>
-                            </div>
-                            <button class="hidden flex-1 px-11 py-3 bg-primary-blue border rounded text-white font-medium hover:bg-blue-600 transition-colors duration-75" id="emailSaveBtn">SAVE</button>
-                        </div>
-
-                    </div>
-                    <!-- email address info -->
-
-                    <!-- mobile number info -->
-                    <div class="flex flex-col gap-5 items-start">
-                        <span class="font-medium text-lg">Mobile Number 
-                            <span class="text-sm text-primary-blue font-medium ml-3 sm:ml-8 cursor-pointer" id="mobEditBtn">Edit</span>
-                        </span>
-
-                        <div class="flex items-center gap-3">
-                            <div class="flex flex-col gap-0.5 sm:w-64 px-3 py-1.5 rounded-sm border bg-gray-100 cursor-not-allowed focus-within:border-primary-blue" id="mobInputs">
-                                <label for="phone" class="text-xs text-gray-500">Mobile Number</label>
-                                <input type="tel" value="+917041411501" class="text-sm outline-none border-none text-gray-500 cursor-not-allowed" disabled>
-                            </div>
-                            <button class="hidden px-11 py-3 bg-primary-blue border rounded text-white font-medium hover:bg-blue-600 transition-colors duration-75" id="mobSaveBtn">SAVE</button>
-                        </div>
-
-                    </div>
-                    <!-- mobile number info -->
                 </div>
                 <!-- edit info container -->
                 
             </div>
-            <!-- details column -->
+            <!-- login column -->
         </div>
         <!-- row -->
 
