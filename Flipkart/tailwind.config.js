@@ -977,6 +977,11 @@ module.exports = {
     width: ['responsive'],
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
+    extend: {
+      backgroundColor: ['group-focus'],
+      scale: ['focus-within'],
+      textDecoration: ['focus-visible'],
+    }
   },
   plugins: [],
 }

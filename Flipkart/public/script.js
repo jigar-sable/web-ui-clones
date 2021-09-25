@@ -152,11 +152,12 @@ $(document).ready(function() {
         $('#personalInputs .inputs').toggleClass('bg-gray-100').toggleClass('cursor-not-allowed');
         toggleInputs('#personalInputs');
         $('#radioInput .inputs').toggleClass('text-gray-500').toggleClass('cursor-not-allowed');
+        $('#radioInput label').toggleClass('cursor-not-allowed');
         toggleInputs('#radioInput');
 
     });
     // personal info edit buttons
-    
+
     const toggleEdit = (editBtn,saveBtn,inputs) => {
         $(editBtn).click(function() {
             $(this).text() == 'Edit' ? $(this).text('Cancel') : $(this).text('Edit')

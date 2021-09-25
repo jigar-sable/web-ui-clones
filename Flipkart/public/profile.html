@@ -287,11 +287,11 @@
                         <span class="font-medium text-lg">Personal Information <span class="text-sm text-primary-blue font-medium ml-8 cursor-pointer" id="editPersonalBtn">Edit</span></span>
 
                         <div class="flex flex-col sm:flex-row items-center gap-3" id="personalInputs">
-                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border inputs cursor-not-allowed bg-gray-100">
+                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border inputs cursor-not-allowed bg-gray-100 focus-within:border-primary-blue">
                                 <label for="fname" class="text-xs text-gray-500">First Name</label>
                                 <input type="text" value="Jigar" class="text-sm outline-none border-none cursor-not-allowed text-gray-500" disabled>
                             </div>
-                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border inputs cursor-not-allowed bg-gray-100">
+                            <div class="flex flex-col gap-0.5 w-64 px-3 py-1.5 rounded-sm border inputs cursor-not-allowed bg-gray-100 focus-within:border-primary-blue">
                                 <label for="lname" class="text-xs text-gray-500">Last Name</label>
                                 <input type="text" value="Sable" class="text-sm outline-none border-none cursor-not-allowed text-gray-500" disabled>
                             </div>
@@ -302,13 +302,13 @@
                         <div class="flex flex-col gap-2">
                             <h2 class="text-sm">Your Gender</h2>
                             <div class="flex items-center gap-8" id="radioInput">
-                                <div class="flex items-center gap-4 inputs text-gray-500">
-                                <input type="radio" name="gender" checked id="male" class="h-4 w-4" disabled>
-                                <label for="male">Male</label>
+                                <div class="flex items-center gap-4 inputs text-gray-500 cursor-not-allowed">
+                                <input type="radio" name="gender" checked id="male" class="h-4 w-4 cursor-not-allowed" disabled>
+                                <label for="male" class="cursor-not-allowed">Male</label>
                                 </div>
-                                <div class="flex items-center gap-4 inputs text-gray-500">
-                                <input type="radio" name="gender" id="female" class="h-4 w-4" disabled>
-                                <label for="female">Female</label>
+                                <div class="flex items-center gap-4 inputs text-gray-500 cursor-not-allowed">
+                                <input type="radio" name="gender" id="female" class="h-4 w-4 cursor-not-allowed" disabled>
+                                <label for="female" class="cursor-not-allowed">Female</label>
                                 </div>
                             </div>
                         </div>
@@ -325,7 +325,7 @@
                         </span>
 
                         <div class="flex items-center gap-3">
-                            <div class="flex flex-col gap-0.5 sm:w-64 px-3 py-1.5 rounded-sm border bg-gray-100 cursor-not-allowed" id="emailInputs">
+                            <div class="flex flex-col gap-0.5 sm:w-64 px-3 py-1.5 rounded-sm border bg-gray-100 cursor-not-allowed focus-within:border-primary-blue" id="emailInputs">
                                 <label for="email" class="text-xs text-gray-500">Email Address</label>
                                 <input type="email" value="jigarsable@gmail.com" class="text-sm outline-none border-none cursor-not-allowed text-gray-500" disabled>
                             </div>
@@ -342,7 +342,7 @@
                         </span>
 
                         <div class="flex items-center gap-3">
-                            <div class="flex flex-col gap-0.5 sm:w-64 px-3 py-1.5 rounded-sm border bg-gray-100 cursor-not-allowed" id="mobInputs">
+                            <div class="flex flex-col gap-0.5 sm:w-64 px-3 py-1.5 rounded-sm border bg-gray-100 cursor-not-allowed focus-within:border-primary-blue" id="mobInputs">
                                 <label for="phone" class="text-xs text-gray-500">Mobile Number</label>
                                 <input type="tel" value="+917041411501" class="text-sm outline-none border-none text-gray-500 cursor-not-allowed" disabled>
                             </div>
