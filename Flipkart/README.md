@@ -12,6 +12,7 @@ Flipkart All Pages UI Clones using TailwindCSS ⚡
 [![web](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://instagramwebui.netlify.app)
 
 ## Sneak Peek of Site 🙈 :
-![ig1](https://user-images.githubusercontent.com/64949957/130317404-eecb0e02-6a60-494b-b328-6a9b7831ae59.png)
+![home](https://user-images.githubusercontent.com/64949957/136542646-b883165d-fed0-4f4f-b031-ceba3db4e8ae.PNG)
+
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
