@@ -4,6 +4,7 @@ Website UI Clones using TailwindCSS ⚡⚡
 - [x] <a href="https://youtubewebui.netlify.app" target="_blank">**YouTube**</a>
 - [x] <a href="https://instagramwebui.netlify.app" target="_blank">**Instagram**</a>
 - [x] <a href="https://sololearnwebui.netlify.app" target="_blank">**Sololearn**</a>
+- [x] <a href="https://flipmart.tech" target="_blank">**Flipkart**</a>
 - [ ] Telegram
 - [ ] Netflix
 
