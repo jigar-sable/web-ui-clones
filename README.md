@@ -45,7 +45,7 @@ git remote add upstream https://github.com/jigar-sable/web-ui-clones.git
 git remote -v
 ```
 
-**5.** Always take a pull from the upstream repository to your master branch to keep it as per with the main project(updated repository).
+**5.** Always pull from the upstream repository into your main branch to keep it in sync with the latest changes from the main project.
 
 ```
 git pull upstream main
@@ -57,11 +57,11 @@ git pull upstream main
 git checkout -b <your_branch_name>
 ```
 
-**7.** Perfom your desired changes to the code base.
+**7.** Perform your desired changes to the codebase.
 
 <p align="center"><img width=35% src="https://media2.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e47pzi2rpig0vc8pjusra8hiai1b91zgiywvbubu9vu&rid=giphy.gif"></p>
 
-**8.** Track your changes:heavy_check_mark:
+**8.** Stage your changes ✅
 
 ```
 git add .
@@ -79,15 +79,15 @@ git commit -m "Relevant message"
 git push -u origin <your_branch_name>
 ```
 
-**11.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
+**11.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch with the target branch of the repository you intend to submit the PR to.
 
 **12.** Add appropriate title and description to your pull request explaining your changes and efforts done. Always make sure you have pulled the latest code from the master branch before making a PR.
 
 **13.** Click on `Create Pull Request`.
 
-**14.** Hurray❗You have created a PR to Web UI Clones Website💥 Sit back patiently and relax till then the project maintainers will review your PR. Please understand, there will be some time taken to review a PR and can vary from a few hours to a few days too so be Patient and keep contributing.
+**14.** **Hurray! 🎉** You have successfully created a PR to Web UI Clones Website💥 Please be patient while the maintainers review your submission. Review times may vary from a few hours to a few days, so kindly wait and continue contributing in the meantime.
 
-Hurray! You successfully made a contribution!
+**Hurray! 🎉 You successfully made a contribution!**
 
 ## 😎 Maintainer
 
